@@ -1,0 +1,17 @@
+#companyLogo
+{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+body
+{
+    background-color: gray;
+} 
+#signuplabel
+{
+    text-decoration: none;
+    color: red;
+    margin-left: 40px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}  
