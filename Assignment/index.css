@@ -1,12 +1,8 @@
 #companyLogo
 {
-    margin-left: 40px;
+    margin-left: 80px;
     margin-top: 10px;
 }
-body
-{
-    background-color: gray;
-} 
 #signuplabel
 {
     text-decoration: none;
@@ -15,3 +11,30 @@ body
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }  
+
+header
+{
+    background-color: rgb(255, 230, 0);
+    padding: 15px 20px;
+    margin: 0;
+}
+
+ul{
+    margin-top: -3px;
+    list-style: none;
+    left: 33%;
+    position: absolute;
+}
+li{
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 10px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+}
