@@ -8,8 +8,8 @@
     text-decoration: none;
     color: red;
     margin-left: 40px;
-    font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }  
 
 header
@@ -20,14 +20,14 @@ header
 }
 
 ul{
-    margin-top: -3px;
+    margin-top: 0px;
     list-style: none;
     left: 33%;
     position: absolute;
 }
 li{
     float: left;
-    border-right: 1px solid #bbb;
+    border-right: 2px solid #bbb;
 }
 li a{
     text-decoration: none;
@@ -37,4 +37,15 @@ li a{
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: red;
+}
+li:last-child{
+    border-right: none;
+}
+
+#ordernowlabel{
+    float: right;
+    color: red;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
