@@ -1,36 +1,13 @@
-html{
-    scroll-behavior: smooth;
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
-
-#scrolltop{
-    height: 600px;
+a:link{
+    text-decoration: none;
 }
-
-#scrollbottom{
-    min-width: 600px;
-    width: 100%;
-    height: auto;
-
-}
-
-#familybanner{
-    margin-left: 50px;
-    min-width: 20%;
-    width: 40%;
-    height: auto;
-}
-
-#kidsbanner{
-    float: right;
-    margin-right: 50px;
-    min-width: 20%;
-    width: 40%;
-    height: auto;
-
-}
-
-.mainBanner{
-    width: 100%;
+label{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
 }
 
 
