@@ -1,41 +1,47 @@
 #companyLogo
 {
-    margin-left: 85px;
+    margin-left: 60px;
+    width: 10%;
 }
 #signuplabel
 {
     text-decoration: none;
-    color: red;
+    color: yellowgreen;
     margin-left: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    min-width: 800px;
+    width:10%;
 }  
 #loginlabel
 {
     text-decoration: none;
-    color: red;
+    color: yellowgreen;
     margin-left: 80px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    width: 10%;
 }
 
 header
 {
-
     padding: 15px 20px;
     margin: 0;
 }
 
 body
 {
-    background-image: url("black-and-grey-wood-background.JPG");
+    background-image: url("images/black-and-grey-wood-background.JPG");
 }
 
 ul{
-    margin-top: 35px;
+    margin-top: 20px;
     list-style: none;
-    left: 33%;
+    left: 27%;
     position: absolute;
+    min-width: 800px;
+    width: 40%;
+    
 }
 li{
     float: left;
@@ -62,4 +68,24 @@ li:last-child{
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+    min-width: 100px;
+}
+
+
+footer{
+    bottom: 0;
+    min-width: 100px;  
+    width: 40%;
+
+}
+
+#footerlist{
+    color: white;
+    min-width: 100px;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
