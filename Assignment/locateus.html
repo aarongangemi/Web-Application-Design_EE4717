@@ -2,28 +2,58 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - FAQ Page</title>
+<title>NTU Pizzeria - Locate Us</title>
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="locate.css">
 </head>
 <body>
     <header>
-            <ul>
-                <li><stong><a href = "index.html"><img src = "homeIcon.PNG" width = "30px" height="20px"></a></stong>
-                <li><strong><a href = "ntuclassics.html">Menu</a></strong></li>
-                <li><strong><a href = "promotions.html">Promotions</a></strong></li>
-                <li><strong><a href = "locateus.html">Locate Us</a></strong></li>
+            <ul class="navigationbar">
+                <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
+                <li class="navitem"><strong><a href = "promotions.html">Promotions</a></strong></li>
+                <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
                  <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up</a></strong>
                  <strong><a id = "loginlabel" href="signUpLogin.html">Login</a></strong>
-                 <strong><a id = "ordernowlabel" href="ntuclassics.html">ORDER NOW</a></strong>
+                 <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
             </div>
             <div>
-               <img id = "companyLogo" src = "logo.PNG" alt = "NTU Pizzeria" width = "100" height="70">
+               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
-
-    </header>
+            <img id = "locationimage" src = "images/location.PNG" alt = "Our location" width = "400px" height = "270px">
+    </header>    
+            <strong><label id = "hoursTitle">Opening Hours:</label></strong>
+            <ul class = "hourslist">
+                <li>Monday: 9.30am - 10pm</li>
+                <li>Tuesday: 9.30am - 10pm</li>
+                <li>Wednesday: 9.30am - 10pm</li>
+                <li>Thursday: 9.30am - 10pm</li>
+                <li>Friday: 9.30am - 12am</li>
+                <li>Saturday: 9.30am - 12am</li>
+                <li>Sunday: 9.30am - 11pm</li>
+            </ul>
+            <strong><label id = "hoursTitle">Delivery Hours:</label></strong>
+            <ul class = "hourslist">
+                <li>Monday to Thursday: 12pm - 10am</li>
+                <li>Friday: 9.30 - 12am</li>
+                <li>Saturday: 9.30am - 12am</li>
+                <li>Sunday: 9.30am - 12am</li>
+            </ul>
+            <strong><label id = "addresstitle">Our Address:</label></strong>
+            <p id = "addressdetails">62 Nanyang Crescent, Singapore<br>(Inside NTU Campus, across from Binjai Hall)</p>
+            <strong><label id = "addresstitle">Contact Us:</label></strong>
+            <p id = "contactdetails">Phone Number: 61459491711<br>
+               NTU@ThePizzeria.com.au<br><br><br>
+               <footer>
+                    <ul class = "footerlist">
+                            <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
+                            <li class="navitem"><a href = "review.html">Review Us</a></li>
+                            <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
+                            <li><a href = "disclaimers.html">DISCLAIMERS</a></li>
+                        </ul>
+               </footer>
 </body> 
 </html>

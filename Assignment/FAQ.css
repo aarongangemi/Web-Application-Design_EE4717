@@ -9,8 +9,6 @@ label{
     font-family: 'Courier New', Courier, monospace;
     color: black;
 }
-
-
 ul{
     margin-top: 20px;
     list-style: none;
@@ -35,4 +33,8 @@ li a{
 }
 li:last-child{
     border-right: none;
+}
+
+#startoftext{
+    margin-top: 10px;
 }
