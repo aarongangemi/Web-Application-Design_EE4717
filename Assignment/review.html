@@ -5,6 +5,7 @@
 <title>NTU Pizzeria - Home Page</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="reviewCSS.css">
 </head>
 <body>
     <header>
@@ -24,10 +25,19 @@
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
     </header>
-    <form method="GET"></form>
-    <strong><label>First Name: </label></strong><input type="text" name = "First Name" id = "firstname"><br><br>
-    <strong><label>Last Name: </label></strong><input type="text" name = "Last Name" id = "lastname"><br><br>
-    <strong><label>Email Address: </label></strong><input type="email" name = "email address" id = "emailaddress"><br><br>
-
+    <div id = "centreform">
+    <form method="GET" action=""></form>
+        <strong><label>First Name: </label></strong><input type="text" name = "First Name" id = "firstname"><br><br>
+        <strong><label>Last Name: </label></strong><input type="text" name = "Last Name" id = "lastname"><br><br>
+        <strong><label>Email Address: </label></strong><input type="email" name = "email address" id = "emailaddress"><br><br>
+        <strong><label><input type = "radio" name = "radio1Star" value="1Star"/>1 Stars</label></strong>
+        <strong><label><input type = "radio" name = "radio2Star" value = "2Star"/>2 Stars</label></strong>
+        <strong><label><input type = "radio" name = "radio3Star" value = "3Star"/>3 Stars</label></strong>
+        <strong><label><input type = "radio" name = "radio4Star" value = "4Star"/>4 Stars</label></strong>
+        <strong><label><input type = "radio" name = "radio5Star" value = "5Star"/>5 Stars</label><br><br>
+        <textarea name = "enjoyedtextbox" id = "enjoyedtextbox" rows = "6" cols="50" placeholder="What did you enjoy?"></textarea><br><br>
+        <textarea name = "improvedtextbox" id = "improvedtextbox" rows = 6 cols = "50" placeholder="What could be improved"></textarea><br><br> 
+        <input id = "submitbutton" type = "submit" value="Submit">
+    </div>
 </body> 
 </html>
