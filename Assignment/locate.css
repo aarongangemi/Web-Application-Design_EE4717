@@ -3,35 +3,44 @@ ul.hourslist{
     color: white;
     list-style-position: inside;
     list-style-type: none;
-    margin-left: 400px;
+    margin-left: 160px;
 }
 #hoursTitle{  
     margin-top: 0px;
-    margin-left: 400px;
+    margin-left: 200px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-#locationimage{
-    float: right;
-    margin-top: 100px;
-    margin-right: 100px;
-    min-width: 30%;
-    width: 20%;
-}
 #addresstitle{
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 400px;
+    margin-left: 200px;
 }
 
 #addressdetails{
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 440px;
+    margin-left: 200px;
     color: white;
 }
 
 #contactdetails{
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 440px;
+    margin-left: 200px;
     color: white;
     text-decoration: none;
+}
+
+.location{
+    float: right;
+    margin-right: 100px;
+    width: 20%;
+    min-width: 30%;
+}
+
+#locationtext{
+    font-family: 'Courier New', Courier, monospace;
+}
+#locationimage{
+    width: 80%;
+    height: auto;
+    min-width: 30%;
 }

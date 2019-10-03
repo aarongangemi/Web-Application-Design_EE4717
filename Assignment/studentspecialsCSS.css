@@ -1,0 +1,23 @@
+#ntuclassicstitle{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 10px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    float: left;
+    border-right: 2px solid #bbb;
+    list-style-type: none;
+}
+
+#studentspecialstitle{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellowgreen;
+    float: left;
+}

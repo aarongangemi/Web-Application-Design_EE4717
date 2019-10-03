@@ -5,7 +5,7 @@
     padding: 15px 10px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    color: yellowgreen;
     float: left;
     border-right: 2px solid #bbb;
     list-style-type: none;
@@ -31,6 +31,7 @@ ul.menunavigationbar{
     color: black;
     float: left;
 }
+
 
 ul.menunavigationbar li a:hover{
     background-color: white;
@@ -72,4 +73,10 @@ ul.menunavigationbar li a:hover{
 
 #qtytextbox{
     width: 100px;
+}
+#cartbutton{
+    margin-left: 70px;
+}
+#price{
+    color: aqua;
 }
