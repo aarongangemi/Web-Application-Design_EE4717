@@ -11,12 +11,9 @@
     list-style-type: none;
 }
 
-#movebody{
-    margin-top: 100px;
-}
 
 ul.menunavigationbar{
-    margin-top: 8px;
+    top: 100px;
     list-style: none;
     left: 35%;
     position: absolute;
@@ -40,13 +37,13 @@ ul.menunavigationbar li a:hover{
 }
 
 #pepperoniPizza{
-    float: left;
+    margin-left: 10px;
 }
 #pepperoniPizzaText{
     font-family: 'Courier New', Courier, monospace;
 }
-#movecart{
-    margin-left: 290px;
+#addicon{
+    margin-left: 110px;
 }
 .border{
     border-style: solid;
@@ -56,4 +53,23 @@ ul.menunavigationbar li a:hover{
     color: white;
     margin-left: 20px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.column{
+    float: left;
+    padding:25px;
+    box-sizing: border-box;
+}
+
+.row::after{
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+}
+#floatlabel{
+    float: right;
+}
+
+#qtytextbox{
+    width: 100px;
 }
