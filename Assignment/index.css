@@ -7,7 +7,7 @@
 #signuplabel
 {
     text-decoration: none;
-    color: yellowgreen;
+    color: greenyellow;
     margin-left: 8px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -17,7 +17,7 @@
 #loginlabel
 {
     text-decoration: none;
-    color: yellowgreen;
+    color: white;
     margin-left: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
@@ -86,7 +86,7 @@ li a{
     padding: 15px 10px;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
+    color: white;
 }
 li:last-child{
     border-right: none;

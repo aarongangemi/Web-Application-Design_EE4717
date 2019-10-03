@@ -6,6 +6,13 @@
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
+    float: left;
+    border-right: 2px solid #bbb;
+    list-style-type: none;
+}
+
+#movebody{
+    margin-top: 100px;
 }
 
 ul.menunavigationbar{
@@ -15,4 +22,38 @@ ul.menunavigationbar{
     position: absolute;
     min-width: 20%;
     width: 40%;
+}
+
+#menuitemnoborder{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    float: left;
+}
+
+ul.menunavigationbar li a:hover{
+    background-color: white;
+}
+
+#pepperoniPizza{
+    float: left;
+}
+#pepperoniPizzaText{
+    font-family: 'Courier New', Courier, monospace;
+}
+#movecart{
+    margin-left: 290px;
+}
+.border{
+    border-style: solid;
+    border-color: black;
+}
+#pizzatitle{
+    color: white;
+    margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }

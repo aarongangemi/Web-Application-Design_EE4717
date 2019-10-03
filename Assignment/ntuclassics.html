@@ -9,13 +9,15 @@
 </head>
 <body>
     <header>
+        <nav>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="10px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.html">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
+        </nav>
             <div>
                  <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up</a></strong>
                  <strong><a id = "loginlabel" href="signUpLogin.html">Login</a></strong>
@@ -24,12 +26,29 @@
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
+            <div>
+                    <nav>
+                    <ul class = "menunavigationbar">
+                        <li class="menunavitem"><strong><a id = "menunavitem" href = "ntuclassics.html">NTU Classics</a></strong></li>
+                        <li class="menunavitem"><strong><a id = "menuitemnoborder" href = "studentspecials.html">Student Specials</a></strong></li>
+                    </ul>
+                    </nav>
+                </div>
     </header>
-    <div>
-        <ul class = "menunavigationbar">
-            <li class="navitem"><strong><a id = "menunavitem" href = "ntuclassics.html">NTU Classics</a></strong></li>
-            <li class="navitem"><strong><a id = "menunavitem" href = "studentspecials.html">Student Specials</a></strong></li>
-        </ul>
+    <div id = "movebody">
+    <strong><em><label id = "pizzatitle" >NTU's pepperoni pizza</label></em></strong>
+    <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/Pepperoni-Pizza.PNG" alt = "Pepperoni pizza image" width = "200" height="200">
+    <br>NTU's famous Pepperoni pizza<br> is our
+     famous Pepperoni pizza.<br> With a crust
+      that is cooked<br> to perfection. Spread with
+       the<br> secret cheese and covered with<br> NTU's
+        famous pepperoni.<br> Be sure to come and get one now!!!<br><br>
+        Price = $3.50<br><label>Qty: </label><input type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty"><br><br> 
+        <img id = "movecart" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+    </p></strong>
     </div>
-</body> 
+    <div>
+            <img id = "movecart" style="float: right" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+    </div>
+</body>
 </html>
