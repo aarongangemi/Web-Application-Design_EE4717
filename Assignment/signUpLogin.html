@@ -2,27 +2,64 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - FAQ Page</title>
+<title>NTU Pizzeria - Home Page</title>
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="home.css">
+<link rel= "stylesheet" href= "signin.css">
 </head>
 <body>
     <header>
-            <ul>
-                <li><stong><a href = "index.html"><img src = "homeIcon.PNG" width = "30px" height="20px"></a></stong>
-                <li><strong><a href = "ntuclassics.html">Menu</a></strong></li>
-                <li><strong><a href = "promotions.html">Promotions</a></strong></li>
-                <li><strong><a href = "locateus.html">Locate Us</a></strong></li>
+            <ul class = "navigationbar">
+                <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
+                <li class="navitem"><strong><a href = "promotions.html">Promotions</a></strong></li>
+                <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                    <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
-                 <strong><a id = "ordernowlabel" href="ntuclassics.html">ORDER NOW</a></strong>
+                 <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
+                 <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
             </div>
             <div>
-               <img id = "companyLogo" src = "logo.PNG" alt = "NTU Pizzeria" width = "100" height="70">
+               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
-
     </header>
+    <div class="row">
+        <div class="column" id = "signinbox">
+            <form action=""></form>
+                <h1>Create an Account</h1>
+                <label><b>Full Name*</b></label><br>
+                <input type="text" placeholder="Enter Full Name" name = "lastname" id = "lastname" required><br><br>
+                <label><b>Email*</b></label><br>
+                <input type = "email" placeholder="Enter Email Address" name = "emailfield" id = "email" required><br><br>
+                <label><b>Password*</b></label><br>
+                <input type = "password" placeholder="Enter Password" name = "password" id = "password" required><br><br>
+                <label><b>Date of Birth</b></label><br>
+                <input type="date" placeholder="Enter D.O.B" name="dateofBirth" id = "dateofbirth"><br><br>
+                <label><b>Delivery Address*</b></label><br>
+                <input id = "housenumber" type = "number" placeholder="Unit/Apt No*" name = "houseNumber" id = "houseNumber" required>
+                <input id = "streetname" type = "text" placeholder="Enter Street Name*" name = "streetName" id = "streetName" required><br><br>
+                <input id = "suburb" type = "text" placeholder="Enter Suburb*" name = "suburbName" id = "suburbName" required>
+                <input id = "postcode" type = "number" placeholder="Enter Postcode*" name ="postcode" id = "postcode" required>
+                <input id = "country" type = "text" value="Singapore" readonly> 
+                <button id = "createacntbtn" type = "submit">Create Account</button>
+                <footer>
+                    <ul class = "footerlist">
+                        <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
+                        <li class="navitem"><a href = "review.html">Review Us</a></li>
+                        <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
+                        <li><a href = "disclaimers.html">Disclaimers</a></li>
+                    </ul>
+                </footer>
+        </div>
+        <div class="column">
+                <h1>Login to Account</h1>
+                <label><b>Email*</b></label><br>
+                <input type = "email" placeholder="Enter Email Address" name = "emailfield" id = "email" required><br><br>
+                <label><b>Password*</b></label><br>
+                <input type = "password" placeholder="Enter Password" name = "password" id = "password" required><br><br>
+                <button id = "createacntbtn" type="submit">Login</button>
+        </div>
+    </div> 
+    
 </body> 
 </html>

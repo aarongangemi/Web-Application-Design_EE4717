@@ -1,0 +1,64 @@
+.column{
+    float: left;
+    padding:22px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 180px;
+    margin-top: 0%;
+}
+
+.row::after{
+    clear: both;
+    display: table;
+    box-sizing: border-box;
+}
+
+
+input{
+    background-color: #c7c7c7;
+    padding:10px;
+    width: 90%;
+    margin-left: 20px;
+    border: none;
+}
+label{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+    color: white;
+}
+
+#createacntbtn{
+    background-color: green;
+    color: white;
+    width: 93%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin-left: 20px;
+    border: none;
+}
+
+#housenumber{
+    width: 13%;
+}
+
+#streetname{
+    width: 71%;
+}
+
+#suburb{
+    width: 30%;
+}
+
+#postcode{
+    width: 30%;
+}
+
+#country{
+    width: 18%;
+}
