@@ -74,9 +74,13 @@ ul.menunavigationbar li a:hover{
 #qtytextbox{
     width: 100px;
 }
-#cartbutton{
-    margin-left: 70px;
-}
+
 #price{
     color: aqua;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+#cartbtn{
+    margin-right: 100px;
+}
+

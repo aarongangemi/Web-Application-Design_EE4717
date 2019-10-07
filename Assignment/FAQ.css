@@ -18,22 +18,6 @@ ul{
     width: 40%;
     
 }
-li{
-    float: left;
-    border-right: 2px solid #bbb;
-}
-li a{
-    text-decoration: none;
-    font-size: 20px;
-    text-align: center;
-    padding: 15px 10px;
-    font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: red;
-}
-li:last-child{
-    border-right: none;
-}
 
 #startoftext{
     margin-top: 10px;

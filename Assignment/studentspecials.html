@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="menucss.css">
 <link rel="stylesheet" href="studentspecialsCSS.css">
+<script type = "text/javascript" src = cartJS.js></script>
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
         </nav>
             <div>
                     <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
-                 <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
+                    <a id = "ordernowlabel" href = "cart.html"><img id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px"></a>
             </div>
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
@@ -43,7 +44,7 @@
           A cheesy<br> delight filled and topped with<br> tomatoes and to add
            extra flavour,<br> sprikled with basil. Be sure to try<br> this cheesy sensation.
          Be sure to <br>come and get one now!!!<br><br>
-         <label id = "price">Price = $11</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty"><br> 
+         <label id = "price">Price = $11</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty" value="0"><br> 
             <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
             </p></strong>
             </div>
@@ -55,7 +56,7 @@
             <br>Ham and Cheese not enough?<br> Why not add Pineapple? 
             This pizza<br> is covered with fresh thick-cut ham,<br> warm cheese and our famous crunchy<br> pineapple. 
             Enjoy a fresh woodfired<br> base and that delicious crunch.<br> Be sure to come and get one now!!!<br><br>
-            <label id = "price">Price = $13.50</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty"><br> 
+            <label id = "price">Price = $13.50</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty" value="0"><br> 
                 <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
                 </div>
@@ -68,7 +69,7 @@
              A base with<br> napoletana sauce replaced with<br> our divine pesto sauce.
              A mouth-<br>watering pizza, smothered with<br> chicken, ham, capsicum and olives.<br> 
              Be sure to come and get one now!!!<br><br>
-             <label id = "price">Price = $12.50</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty"><br> 
+             <label id = "price">Price = $12.50</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty" value="0"><br> 
                 <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
                 </div>
@@ -80,10 +81,9 @@
                 <br>Looking for a vegeterian option?.<br> Our vegetarian pizza gives<br> you a variety
                  of vegies to<br> enjoy. The pizza is topped<br> with cucumber, tomato, onion and<br> capsicum.
                 Be sure to come and get<br> one now!!!<br><br>
-                <label id = "price">Price = $14</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty"><br> 
+                <label id = "price">Price = $14</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pepperoniQty" id = "pepperoniQty" value="0"><br> 
                     <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                     </p></strong>
-                    <img id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px">
                     <footer>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
