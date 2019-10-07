@@ -44,7 +44,7 @@
            the secret<br> cheese and covered with NTU's<br>
             famous pepperoni. Be sure to <br>come and get one now!!!<br><br>
             <label id = "price">Price = $10.50</label>
-            <form action="cart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "pepperoniQty" type = "number" min="0"onclick="" value="0"><br> 
+            <form action="cart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "pepperoniQty" type = "number" min="0"onclick="" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
             <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
             </p></strong>
             </div>
@@ -58,7 +58,7 @@
             topped with<br> warm mozzarella cheese. Spread<br> with
                our famous mushroom.Be sure<br> to come and get one now!!!<br><br>
                <label id = "price">Price = $12</label><br><br>
-               <form action="cart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value="0"><br> 
+               <form action="cart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
                 <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
                 </div>
@@ -72,7 +72,7 @@
              Smothered with our secret<br> cheese, basil, ham and pineapple.<br> 
              Be sure to come and get one now!!!<br><br>
             <label id = "price">Price = $14.50</label><br><br>
-            <label id = "price">Qty: </label><input id = "qtytextbox" name = "californianQty" type = "number" min="0" id = "californianQty" value="0"><br> 
+            <label id = "price">Qty: </label><input id = "qtytextbox" name = "californianQty" type = "number" min="0" id = "californianQty" value ="<?php echo $_POST['californianQty']; ?>"><br> 
             <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
                 </div>
@@ -86,7 +86,7 @@
                  to enjoy.<br>From prawn to pineapple, the<br> pizza is topped with every<br> ingredient we offer.
                  Be sure to <br>come and get one now!!!<br><br>
                  <label id = "price">Price = $16.50</label><br><br>
-                 <label id = "price">Qty: </label><input id = "qtytextbox" name = "mixedQty" type = "number" min="0" id = "mixedQty" value="0"><br> 
+                 <label id = "price">Qty: </label><input id = "qtytextbox" name = "mixedQty" type = "number" min="0" id = "mixedQty" value ="<?php echo $_POST['mixedQty']; ?>"><br> 
                     <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"></form><br> 
                     </p></strong>
                     <footer>

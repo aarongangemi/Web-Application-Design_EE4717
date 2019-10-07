@@ -2,6 +2,7 @@
 session_start();
 function addToCart()
 {
+    include 'ntuclassics.html';
     $_SESSION['cart'] = array();
     $pepperoniQty = $_POST['pepperoniQty'];
     if($pepperoniQty > 0)
@@ -38,5 +39,4 @@ function addToCart()
     print_r($_SESSION['cart']);
 }
 addToCart();
-
 ?>
