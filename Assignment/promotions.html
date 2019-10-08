@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>NTU Pizzeria - Promotions Page</title>
 <link rel="stylesheet" href="index.css">
-<<link rel="stylesheet" href="promotionCSS.css">
+<link rel="stylesheet" href="promotionCSS.css">
 </head>
 <body>
     <header>
@@ -33,8 +33,10 @@
           Get two 15 inch pizza's<br> for just $20. The pizza's included are<br> meat-lovers and vegetarian.
            Filled with all the delightful meat and vegies.
          Be sure to come and get one now!!!<br><br>
-         <label id = "price">Price = $20</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" id = "largepizzaQty" value="0"><br> 
-            <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+         <label id = "price">Price = $20</label><br>
+         <form action = "promotionscart.php" method="POST">
+             <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" id = "largePizzaQty" name = "largePizzaQty" value ="<?php echo $_POST['pestoQty']; ?>"><br> 
+            <input type = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
             </p></strong>
             </div>
         </div>    
@@ -46,8 +48,9 @@
             This pizza deal is one not to miss. <br> Get in now and get 3 pizzas for the<br> price of just $15.
             Enjoy a margherita, mushroom and cheese and a pepperoni<br> pizza to share around the table.<br>
             Be sure to come and get one now!!!<br><br>
-            <label id = "price">Price = $15</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" id = "familyQty" value="0"><br> 
-                <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+            <label id = "price">Price = $15</label><br><br>
+            <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" id = "familyQty" name = "familyQty" value ="<?php echo $_POST['pestoQty']; ?>"><br> 
+                <input type = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
                 </div>
             </div>   
@@ -59,8 +62,8 @@
              A base with<br> napoletana sauce topped with<br> fresh and warm mozzarella cheese.<br>
              This one will guarantee to fill<br> the kids up. A meal for just $8<br>
              Be sure to come and get one now!!!<br><br>
-             <label id = "price">Price = $8</label>  |  <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" id = "kidsPizzaQty" value="0"><br> 
-                <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+             <label id = "price">Price = $8</label><br><br><label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" id = "kidsPizzaQty" name = "kidsPizzaQty" value ="<?php echo $_POST['pestoQty']; ?>"><br> 
+                <input type ="image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"></form><br> 
                 </p></strong>
                 <footer>
                     <ul class = "footerlist">

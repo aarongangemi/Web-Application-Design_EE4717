@@ -18,15 +18,17 @@
             </ul>
             <div>
                  <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
-                 <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
+                 <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
             </div>
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
-    </header>
-    <div id = "row">
-        <div id = "column">
-                <?php
+            <div id = "row">
+            <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "15" cols="80" placeholder="Enter Customisations here"></textarea><br><br>
+        </div>
+            </header>
+    <div>
+    <?php
                 session_start();
                 function createTableCart($cart)
                 {
@@ -46,15 +48,10 @@
                             $counter = 0;
                         }
                     }
-                    echo"</table>";
+                    echo"</table><br><br><br><br>";
                 }
                 createTableCart($_SESSION['cart']);
                 ?>
-        </div>
-    </div>
-    <div id = "row">
-        <div id = "column">
-            <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "15" cols="80" placeholder="Enter Customisations here"></textarea><br><br>
         </div>
     </div>
 </body>

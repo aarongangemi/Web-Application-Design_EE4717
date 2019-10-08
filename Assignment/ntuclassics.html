@@ -21,7 +21,7 @@
         </nav>
             <div>
                     <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
-                  <a id = "ordernowlabel" href = "cart.html"><img id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px"></a>
+                  <a id = "ordernowlabel" href = "cartController.php"><img id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px"></a>
             </div>
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
@@ -58,7 +58,7 @@
             topped with<br> warm mozzarella cheese. Spread<br> with
                our famous mushroom.Be sure<br> to come and get one now!!!<br><br>
                <label id = "price">Price = $12</label><br><br>
-               <form action="cart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
+               <form action="ntuclassicscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
                 <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
                 </div>

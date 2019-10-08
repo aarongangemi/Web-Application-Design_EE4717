@@ -13,7 +13,7 @@
 #customisationsbox{
     float: right;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 table{
@@ -32,3 +32,9 @@ td, th{
 #cartbutton{
     float: right;
 }    
+
+#deliverylabel{
+    float: right;
+    margin-right: 100px;
+    display: block;
+}
