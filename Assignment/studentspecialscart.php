@@ -25,7 +25,6 @@ if($pestoQty > 0 && isset($pestoQty))
 {
     $pizzaName = "Pesto Peri Chicken Pizza";
     $subtotal = $pestoQty * 12.5;
-    array_push($_SESSION['cart'], array($pestoQty, $pizzaName, $subtotal));
     $_SESSION['cart']['pestoqty'] = $pestoQty;
     $_SESSION['cart']['pestoname'] = $pizzaName;
     $_SESSION['cart']['pestototal'] = $subtotal;
@@ -34,10 +33,8 @@ if($vegetarianQty > 0 && isset($vegetarianQty))
 {
     $pizzaName = "Vegetarian Pizza";
     $subtotal = $vegetarianQty * 14;
-    array_push($_SESSION['cart'], array($vegetarianQty, $pizzaName, $subtotal));
     $_SESSION['cart']['vegetarianqty'] = $vegetarianQty;
     $_SESSION['cart']['vegetarianname'] = $pizzaName;
     $_SESSION['cart']['vegetariantotal'] = $subtotal;
 }
-print_r($_SESSION['cart']);
 ?>

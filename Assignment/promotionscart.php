@@ -28,5 +28,4 @@ if(isset($kidsPizzaQty) && $kidsPizzaQty > 0)
     $_SESSION['cart']['kidspizzaname'] = $pizzaName;
     $_SESSION['cart']['kidspizzatotal'] = $subtotal;
 }
-print_r($_SESSION['cart']);
 ?>

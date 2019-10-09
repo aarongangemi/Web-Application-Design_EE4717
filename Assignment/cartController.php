@@ -27,7 +27,6 @@
             <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "15" cols="80" placeholder="Enter Customisations here"></textarea><br><br>
         </div>
             </header>
-    <div>
     <?php
                 session_start();
                 function createTableCart($cart)
@@ -52,7 +51,5 @@
                 }
                 createTableCart($_SESSION['cart']);
                 ?>
-        </div>
-    </div>
 </body>
 </html>
