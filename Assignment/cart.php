@@ -44,7 +44,6 @@ function addToCart()
         $_SESSION['cart']['mixedname'] = $pizzaName;
         $_SESSION['cart']['mixedtotal'] = $subtotal;
     }
-    print_r($_SESSION['cart']);
 }
 addToCart();
 ?>

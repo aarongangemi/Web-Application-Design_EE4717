@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'promotions.html';
+header("Location: promotions.html");
 $largePizzaQty = $_POST['largePizzaQty'];
 $familyPizzaQty = $_POST['familyQty'];
 $kidsPizzaQty = $_POST['kidsPizzaQty'];

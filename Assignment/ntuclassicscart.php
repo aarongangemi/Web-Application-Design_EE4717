@@ -1,6 +1,6 @@
 <?php
-session_start();
-    include 'ntuclassics.html';
+session_start();   
+    header("Location: ntuclassics.html");
     $pepperoniQty = $_POST['pepperoniQty'];
     if($pepperoniQty > 0 && isset($pepperoniQty))
     {

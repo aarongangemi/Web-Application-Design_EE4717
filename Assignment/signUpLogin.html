@@ -26,10 +26,10 @@
     </header>
     <div class="row">
         <div class="column" id = "signinbox">
-            <form action="index.html" onsubmit=" return validateSignup()" id = "frm1">
+            <form action="create_user.php" method = "POST" onsubmit=" return validateSignup()" id = "frm1">
                 <h1>Create an Account</h1>
                 <label><b>Full Name*</b></label><br>
-                <input type="text" placeholder="Enter Full Name (E.g. John Doe)" name = "lastname" id = "fullname" required><br><br>
+                <input type="text" placeholder="Enter Full Name (E.g. John Doe)" name = "fullname" id = "fullname" required><br><br>
                 <label><b>Email*</b></label><br>
                 <input type = "email" placeholder="Enter Email Address" name = "emailfield" id = "email" required><br><br>
                 <label><b>Password*</b></label><br>
@@ -42,7 +42,7 @@
                 <input id = "suburb" type = "text" placeholder="Enter Suburb*" name = "suburbName" id = "suburbName" required/>
                 <input id = "postcode" type = "number" placeholder="Enter Postcode*" name ="postcode" id = "postcode" required/>
                 <input id = "country" type = "text" value="Singapore" readonly> 
-                <a href = "index.html"><input id = "createacntbtn" type = "submit" value="Create Account"></a></form>
+                <input id = "createacntbtn" type = "submit" value="Create Account"></form>
                 <footer>
                     <ul class = "footerlist">
                         <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>

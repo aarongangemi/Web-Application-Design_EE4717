@@ -32,6 +32,7 @@
                 function createTableCart($cart)
                 {
                     $counter = 0;
+                    $total = 0;
                     echo "<table border=\"1\">";
                     echo "<tr><th>Qty</th><th>Pizza</th><th>Subtotal</th></tr>";
                     reset($cart);
@@ -47,6 +48,17 @@
                             $counter = 0;
                         }
                     }
+                    $counter = 0;
+                    foreach($_SESSION['cart'] as $key => $value)
+                    {
+                        $counter++;
+                        if($counter == 3)
+                        {
+                            $total += $value;
+                            $counter = 0;
+                        }
+                    }
+                    echo "<tr><td><td/><td>Total: ".$total."</td>";
                     echo"</table><br><br><br><br>";
                 }
                 createTableCart($_SESSION['cart']);

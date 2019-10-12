@@ -6,6 +6,7 @@ function validateSignup()
     }
     else
     {
+        changeLabel();
         return true;
     }
 }
@@ -108,4 +109,9 @@ function validatePostCode()
         alert("Invalid postcode, please try again");
         return false;
     }
+}
+
+function changeLabel()
+{
+    document.getElementById("loginlabel").textContent = "Logged In/Change User";
 }
