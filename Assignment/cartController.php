@@ -21,10 +21,10 @@
                  <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
             </div>
             <div>
-               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
+               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px"><br><br>
             </div>
-            <div id = "row">
-            <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "15" cols="80" placeholder="Enter Customisations here"></textarea><br><br>
+            <div id = "column">
+            <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "25" cols="80" placeholder="Enter Customisations here"></textarea>
         </div>
             </header>
     <?php

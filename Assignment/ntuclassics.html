@@ -9,6 +9,13 @@
 <script type="text/javascript" src="cartJS.js"></script>
 </head>
 <body>
+    <?php
+    if(!isset($_SESSION))
+    {
+        session_start();
+        $_SESSION['cart'] = array();
+    }
+    ?>
     <header>
         <nav>
             <ul class = "navigationbar">
@@ -44,7 +51,7 @@
            the secret<br> cheese and covered with NTU's<br>
             famous pepperoni. Be sure to <br>come and get one now!!!<br><br>
             <label id = "price">Price = $10.50</label>
-            <form action="cart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "pepperoniQty" type = "number" min="0"onclick="" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
+            <form action="ntuclassicscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "pepperoniQty" type = "number" min="0"onclick="" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
             <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
             </p></strong>
             </div>

@@ -1,7 +1,6 @@
 <?php
 session_start();
     include 'ntuclassics.html';
-    $_SESSION['cart'] = array();
     $pepperoniQty = $_POST['pepperoniQty'];
     if($pepperoniQty > 0 && isset($pepperoniQty))
     {
