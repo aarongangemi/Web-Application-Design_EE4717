@@ -110,8 +110,3 @@ function validatePostCode()
         return false;
     }
 }
-
-function changeLabel()
-{
-    document.getElementById("loginlabel").textContent = "Logged In/Change User";
-}
