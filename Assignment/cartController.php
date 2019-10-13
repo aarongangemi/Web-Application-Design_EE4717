@@ -18,48 +18,52 @@
             </ul>
             <div>
                  <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
-                 <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
+                 <form action = "deliveryconfirmation.php" method = "POST"><a id = "ordernowlabel"><input type = "image" src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
             </div>
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px"><br><br>
             </div>
             <div id = "column">
-            <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "25" cols="80" placeholder="Enter Customisations here"></textarea>
+            <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "25" cols="80" placeholder="Enter Customisations here"></textarea></form>
         </div>
             </header>
     <?php
                 session_start();
                 function createTableCart($cart)
                 {
-                    $counter = 0;
-                    $total = 0;
-                    echo "<table border=\"1\">";
-                    echo "<tr><th>Qty</th><th>Pizza</th><th>Subtotal</th></tr>";
-                    reset($cart);
-                    $value = current($cart);
-                    while($value)
+                    if(!empty($_SESSION['cart']))
                     {
-                        echo "<td>".$value."</td>\n";
-                        $value = next($cart);
-                        $counter++;
-                        if($counter == 3)
+                        $counter = 0;
+                        $total = 0;
+                        echo "<table border=\"1\">";
+                        echo "<tr><th>Qty</th><th>Pizza</th><th>Subtotal</th></tr>";
+                        reset($cart);
+                        $value = current($cart);
+                        while($value)
                         {
-                            echo "<tr>";
-                            $counter = 0;
+                            echo "<td>".$value."</td>\n";
+                            $value = next($cart);
+                            $counter++;
+                            if($counter == 3)
+                            {
+                                echo "<tr>";
+                                $counter = 0;
+                            }
                         }
-                    }
-                    $counter = 0;
-                    foreach($_SESSION['cart'] as $key => $value)
-                    {
-                        $counter++;
-                        if($counter == 3)
+                        $counter = 0;
+                        foreach($_SESSION['cart'] as $key => $value)
                         {
-                            $total += $value;
-                            $counter = 0;
+                            $counter++;
+                            if($counter == 3)
+                            {
+                                $total += $value;
+                                $counter = 0;
+                            }
                         }
+                        echo "<tr><td><td/><td>Total: ".$total."</td>";
+                        echo"</table><br><br><br><br>";
+                        $_SESSION['loggedinUser']['total'] = $total;
                     }
-                    echo "<tr><td><td/><td>Total: ".$total."</td>";
-                    echo"</table><br><br><br><br>";
                 }
                 createTableCart($_SESSION['cart']);
                 ?>

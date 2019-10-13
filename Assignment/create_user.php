@@ -1,11 +1,13 @@
 <html>
 <body>
 <?php
-$fullname = $_POST['fullname'];
-$emailAddress = $_POST['emailfield'];
+session_start();
+$_SESSION['loggedinUser'] = array();
+$fullname = trim($_POST['fullname']);
+$emailAddress = trim($_POST['emailfield']);
 $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-$DOB = $_POST['dateofBirth'];
-$deliveryAddress = $_POST['houseNumber']." ".$_POST['streetName'].", ".$_POST['suburbName'].". ".$_POST['postcode'].", Singapore";
+$DOB = trim($_POST['dateofBirth']);
+$deliveryAddress = trim($_POST['houseNumber']." ".$_POST['streetName'].", ".$_POST['suburbName'].". ".$_POST['postcode'].", Singapore");
 if(!$fullname || !$emailAddress || !$password || !$DOB || !$deliveryAddress)
 {
     echo "Not all required details have been entered. <br/> Please try again";
@@ -30,6 +32,11 @@ if(mysqli_connect_errno())
 $query = 'INSERT INTO ntupizzeria(Full_Name, Email,Password, DOB, Address) VALUES ("'.$fullname.'","'.$emailAddress.'","'.$password.'","'.$DOB.'","'.$deliveryAddress.'")';
 $result = $db->query($query);
 $db->close();
+$_SESSION['loggedinUser']['fullname'] = $fullname;
+$_SESSION['loggedinUser']['email'] = $emailAddress;
+$_SESSION['loggedinUser']['DOB'] = $DOB;
+$_SESSION['loggedinUser']['deliveryAddress'] = $deliveryAddress;
+$_SESSION['loggedinUser']['isLoggedIn'] = TRUE;
 header("Location: index.html");
 ?>
 </body>

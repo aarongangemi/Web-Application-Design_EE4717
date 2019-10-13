@@ -62,3 +62,8 @@ label{
 #country{
     width: 18%;
 }
+
+#warning{
+    color: rgb(145, 0, 0);
+    margin-left: 50px;
+}
