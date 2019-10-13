@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - Home Page</title>
+<title>NTU Pizzeria - Delivery Confirmation</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="delivery.css">
 </head>
@@ -16,7 +16,7 @@
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                 <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
+                 <strong><a id = "signuplabel" href="signUpLogin.html"><?php session_start(); if(isset($_SESSION['loggedinUser'])){}else{echo "Sign Up/Login";}?></a></strong>
                  <a id = "ordernowlabel" href="index.html"><img src = "images/button_confirm-delivery.PNG" width = 200px height = 40px></a>
             </div>
             <div>
@@ -24,7 +24,6 @@
             </div>
     </header>
             <p id = "customerdetails"><?php
-            session_start();
             if(!isset($_SESSION['loggedinUser']) || $_SESSION['loggedinUser']['isLoggedIn'] != TRUE)
             {
                 header("Location: signUpLogin.html");
