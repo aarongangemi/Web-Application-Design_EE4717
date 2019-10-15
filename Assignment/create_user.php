@@ -5,7 +5,7 @@ session_start();
 $_SESSION['loggedinUser'] = array();
 $fullname = trim($_POST['fullname']);
 $emailAddress = trim($_POST['emailfield']);
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$password = hash("sha512", $_POST['password']);
 $DOB = trim($_POST['dateofBirth']);
 $deliveryAddress = trim($_POST['houseNumber']." ".$_POST['streetName'].", ".$_POST['suburbName'].". ".$_POST['postcode'].", Singapore");
 if(!$fullname || !$emailAddress || !$password || !$DOB || !$deliveryAddress)
@@ -22,15 +22,19 @@ if(!get_magic_quotes_gpc())
     $deliveryAddress = addslashes($deliveryAddress);
 }
 $user = 'root';
-$password = '';
+$passwordLogin = '';
 $database = "NTUPizzeria";
-$db = new mysqli('localhost', $user, $password, $database);
+$db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(mysqli_connect_errno())
 {
     echo "Error: Could not connect to database, please try again later";
 }
 $query = 'INSERT INTO ntupizzeria(Full_Name, Email,Password, DOB, Address) VALUES ("'.$fullname.'","'.$emailAddress.'","'.$password.'","'.$DOB.'","'.$deliveryAddress.'")';
 $result = $db->query($query);
+$query = "SELECT Customer_ID FROM ntupizzeria WHERE Email = '$emailAddress' AND Full_Name = '$fullname' AND Password = '$password'";
+$result = $db->query($query);
+$row = $result->fetch_assoc();
+$_SESSION['loggedinUser']['customerID'] = $row['Customer_ID'];
 $db->close();
 $_SESSION['loggedinUser']['fullname'] = $fullname;
 $_SESSION['loggedinUser']['email'] = $emailAddress;

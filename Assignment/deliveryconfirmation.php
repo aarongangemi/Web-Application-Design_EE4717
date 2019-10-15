@@ -16,14 +16,15 @@
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                 <strong><a id = "signuplabel" href="signUpLogin.html"><?php session_start(); if(isset($_SESSION['loggedinUser'])){}else{echo "Sign Up/Login";}?></a></strong>
-                 <a id = "ordernowlabel" href="index.html"><img src = "images/button_confirm-delivery.PNG" width = 200px height = 40px></a>
+                 <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
+                 <form id = "ordernowlabel" action = "confirmdelivery.php"><input type = "image" src = "images/button_confirm-delivery.PNG" width = 200px height = 40px></form>
             </div>
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
             </div>
     </header>
             <p id = "customerdetails"><?php
+            session_start();
             if(!isset($_SESSION['loggedinUser']) || $_SESSION['loggedinUser']['isLoggedIn'] != TRUE)
             {
                 header("Location: signUpLogin.html");

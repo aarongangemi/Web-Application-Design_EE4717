@@ -17,7 +17,7 @@
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                 <strong><a id = "signuplabel" href="signUpLogin.html"><?php session_start(); if(isset($_SESSION['loggedinUser'])){}else{echo "Sign Up/Login";}?></a></strong>
+                 <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
                  <a id = "ordernowlabel" href="ntuclassics.html"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
             </div>
             <div>
@@ -54,13 +54,14 @@
         </div>
         <div class="column">
                 <h1>Login to Account</h1>
-                <form action="index.html" onsubmit="return validateLogin()">
+                <form action="login.php" method = "POST" onsubmit="return validateLogin()">
                 <label><b>Email*</b></label><br>
-                <input type = "email" placeholder="Enter Email Address" name = "emailfield" id = "email" required><br><br>
+                <input type = "email" placeholder="Enter Email Address" name = "emailfieldLogin" id = "email" required><br><br>
                 <label><b>Password*</b></label><br>
-                <input type = "password" placeholder="Enter Password" name = "password" id = "passwordLogin" required><br><br>
+                <input type = "password" placeholder="Enter Password" name = "passwordLogin" id = "passwordLogin" required><br><br>
                 <input id = "createacntbtn" type="submit" value="Login"><br><br>
-                <strong><label id = "warning">*You must login/signup before you submit an order for delivery</label></strong>
+                <b><strong><label id = "warning">*You must login/signup before you submit an order for delivery.<br></label></strong></b>
+                <b><strong><label id = "warning">*If returned here after login, login was unsuccessful.</label></strong></b>
                 </form>
         </div>
     </div> 

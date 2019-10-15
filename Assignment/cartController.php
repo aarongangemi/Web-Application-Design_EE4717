@@ -5,9 +5,8 @@
 <title>NTU Pizzeria - Home Page</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="cartcss.css">
-<script type="text/javascript" src = cartJS.js></script>
 </head>
-<body onload="main()">
+<body>
     <header>
             <ul class = "navigationbar">
                 <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
@@ -17,7 +16,7 @@
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                 <strong><a id = "signuplabel" href="signUpLogin.html"><?php session_start(); if(isset($_SESSION['loggedinUser'])){}else{echo "Sign Up/Login";}?></a></strong>
+                <strong><a id = "signuplabel" href="signUpLogin.html">Sign Up/Login</a></strong>
                  <form action = "deliveryconfirmation.php" method = "POST"><a id = "ordernowlabel"><input type = "image" src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
             </div>
             <div>
@@ -28,11 +27,12 @@
         </div>
             </header>
     <?php
-                
+                session_start();
                 function createTableCart($cart)
                 {
-                    if(!empty($_SESSION['cart']) || $_SESSION['cart'] != NULL || isset($_SESSION['cart']))
+                    if(isset($_SESSION['cart']))
                     {
+                        unset($_SESSION['cart']['No Item Message']);
                         $counter = 0;
                         $total = 0;
                         echo "<table border=\"1\">";
@@ -64,6 +64,10 @@
                         echo"</table><br><br><br><br>";
                         $_SESSION['loggedinUser']['total'] = $total;
                     }
+                }
+                if(!isset($_SESSION['cart']))
+                {
+                    $_SESSION['cart']['No Item Message'] = "No items in Cart";
                 }
                 createTableCart($_SESSION['cart']);
                 ?>
