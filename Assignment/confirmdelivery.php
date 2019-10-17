@@ -2,6 +2,7 @@
 session_start();
 function mailUser()
 {
+    $to = 'f35ee@localhost';
     $subject = "NTU Pizza Delivery - Order Status Notification";
     $message = "Dear ".$_SESSION['loggedinUser']['fullname']."\n".
     "We are pleased to inform you that youre order is being prepared.\n".
@@ -9,13 +10,11 @@ function mailUser()
     "Kind Regards,\n". 
     "The NTU Pizzeria";
     $message = wordwrap($message, 50);
-    mail("aaron@gangemi.com", $subject, $message);
-//Stub for php to send email, must be properly connected to mail server.
-//Above is code to send email without server connection
+    $headers = 'From: f35ee@localhost' . "\r\n".'Reply-To: f35e@localhost'.'X-Mailer: PHP/'.phpversion();
+    mail($to,$subject,$message,$headers,'-ff32ee@localhost');
 }
 function addOrderToDatabase()
 {
-
 $user = 'root';
 $passwordLogin = '';
 $database = "orderdatabase";
