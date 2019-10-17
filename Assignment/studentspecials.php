@@ -21,7 +21,7 @@
     $pepperoniQuery = "SELECT Pizza_price FROM pizzas";
     $result = $db->query($pepperoniQuery);
     if ($result) {
-    for($i = 0; $i < 4; $i++)
+    for($i = 0; $i < $result->num_rows; $i++)
     {
         $row = $result->fetch_assoc();
         $_SESSION['prices'][$i] = $row['Pizza_price'];
@@ -63,7 +63,7 @@
           A cheesy<br> delight filled and topped with<br> tomatoes and to add
            extra flavour,<br> sprikled with basil. Be sure to try<br> this cheesy sensation.
          Be sure to <br>come and get one now!!!<br><br>
-         <label id = "price">Price = $11</label><br>
+         <label id = "price"><?php echo "Price = ".$_SESSION['prices'][4];?></label><br>
          <form action = "studentspecialscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "margheritaQty" id = "margheritaQty" value ="<?php echo $_POST['margheritaQty']; ?>"><br> 
             <input type = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
             </p></strong>
@@ -76,7 +76,7 @@
             <br>Ham and Cheese not enough?<br> Why not add Pineapple? 
             This pizza<br> is covered with fresh thick-cut ham,<br> warm cheese and our famous crunchy<br> pineapple. 
             Enjoy a fresh woodfired<br> base and that delicious crunch.<br> Be sure to come and get one now!!!<br><br>
-            <label id = "price">Price = $13.50</label><br><br>
+            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][5];?></label><br><br>
             <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "hawaiianQty" id = "hawaiianQty" value ="<?php echo $_POST['hawaiianQty']; ?>"><br> 
                 <input type = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
@@ -90,7 +90,7 @@
              A base with<br> napoletana sauce replaced with<br> our divine pesto sauce.
              A mouth-<br>watering pizza, smothered with<br> chicken, ham, capsicum and olives.<br> 
              Be sure to come and get one now!!!<br><br>
-             <label id = "price">Price = $12.50</label><br><br>
+             <label id = "price"><?php echo "Price = ".$_SESSION['prices'][6];?></label><br><br>
              <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "pestoQty" id = "pestoQty" value ="<?php echo $_POST['pestoQty']; ?>"><br> 
                 <input type = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
@@ -103,7 +103,7 @@
                 <br>Looking for a vegeterian option?.<br> Our vegetarian pizza gives<br> you a variety
                  of vegies to<br> enjoy. The pizza is topped<br> with cucumber, tomato, onion and<br> capsicum.
                 Be sure to come and get<br> one now!!!<br><br>
-                <label id = "price">Price = $14</label><br><br>
+                <label id = "price"><?php echo "Price = ".$_SESSION['prices'][7];?></label><br><br>
                 <label id = "price">Qty: </label><input id = "qtytextbox" type = "number" min="0" name = "vegetarianQty" id = "vegetarianQty" value ="<?php echo $_POST['vegetarianQty']; ?>"><br> 
                     <input type = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"></form><br> 
                     </p></strong>

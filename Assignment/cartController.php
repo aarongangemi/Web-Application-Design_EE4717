@@ -10,7 +10,7 @@
     <header>
             <ul class = "navigationbar">
                 <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
-                <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
+                <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.html">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>

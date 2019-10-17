@@ -1,6 +1,6 @@
 <?php
 session_start();   
-    header("Location: ntuclassics.html");
+    header("Location: ntuclassics.php");
     $pepperoniQty = $_POST['pepperoniQty'];
     if($pepperoniQty > 0 && isset($pepperoniQty))
     {
@@ -36,5 +36,9 @@ session_start();
         $_SESSION['cart']['mixedQty'] = $mixedQty;
         $_SESSION['cart']['mixedname'] = $pizzaName;
         $_SESSION['cart']['mixedtotal'] = $subtotal;
+    }
+
+    function getPrice(){
+
     }
 ?>

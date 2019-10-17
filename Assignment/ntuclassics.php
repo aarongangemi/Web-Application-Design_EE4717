@@ -15,6 +15,24 @@
         session_start();
         $_SESSION['cart'] = array();
     }
+    $user = 'root';
+    $passwordLogin = '';
+    $database = "pizzadatabase";
+    $db = new mysqli('localhost', $user, $passwordLogin, $database);
+    if(mysqli_connect_errno())
+    {
+        echo "Error: Could not connect to database, please try again later";
+    }
+    $pepperoniQuery = "SELECT Pizza_price FROM pizzas";
+    $result = $db->query($pepperoniQuery);
+    if ($result) {
+    for($i = 0; $i < $result->num_rows; $i++)
+    {
+        $row = $result->fetch_assoc();
+        $_SESSION['prices'][$i] = $row['Pizza_price'];
+    }
+    }
+    $db->close();
     ?>
     <header>
         <nav>
@@ -36,8 +54,8 @@
             <div>
                     <nav>
                     <ul class = "menunavigationbar">
-                        <li class="menunavitem"><strong><a id = "menunavitem" href = "ntuclassics.html">NTU Classics</a></strong></li>
-                        <li class="menunavitem"><strong><a id = "menuitemnoborder" href = "studentspecials.html">Student Specials</a></strong></li>
+                        <li class="menunavitem"><strong><a id = "menunavitem" href = "ntuclassics.php">NTU Classics</a></strong></li>
+                        <li class="menunavitem"><strong><a id = "menuitemnoborder" href = "studentspecials.php">Student Specials</a></strong></li>
                     </ul>
                     </nav>
                 </div>
@@ -50,7 +68,7 @@
           <br>With a crust that is cooked to<br> perfection.Spread with
            the secret<br> cheese and covered with NTU's<br>
             famous pepperoni. Be sure to <br>come and get one now!!!<br><br>
-            <label id = "price">Price = $10.50</label>
+            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][0];?></label>
             <form action="ntuclassicscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "pepperoniQty" type = "number" min="0" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
             <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
             </p></strong>
@@ -64,7 +82,7 @@
             change up from<br> the traditional margherita pizza. <br>Enjoy a fresh base 
             topped with<br> warm mozzarella cheese. Spread<br> with
                our famous mushroom.Be sure<br> to come and get one now!!!<br><br>
-               <label id = "price">Price = $12</label><br><br>
+               <label id = "price"><?php echo "Price = ".$_SESSION['prices'][1];?></label><br><br>
                <form action="ntuclassicscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
                 <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
@@ -78,7 +96,7 @@
              <br>With a crust surrounded by our<br> mouth-watering napoletana sauce.<br>
              Smothered with our secret<br> cheese, basil, ham and pineapple.<br> 
              Be sure to come and get one now!!!<br><br>
-            <label id = "price">Price = $14.50</label><br><br>
+            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][2];?></label><br><br>
             <label id = "price">Qty: </label><input id = "qtytextbox" name = "californianQty" type = "number" min="0" id = "californianQty" value ="<?php echo $_POST['californianQty']; ?>"><br> 
             <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
                 </p></strong>
@@ -92,7 +110,7 @@
                  most popular pizza. Our Pizza<br> gives you a variety
                  to enjoy.<br>From prawn to pineapple, the<br> pizza is topped with every<br> ingredient we offer.
                  Be sure to <br>come and get one now!!!<br><br>
-                 <label id = "price">Price = $16.50</label><br><br>
+                 <label id = "price"><?php echo "Price = ".$_SESSION['prices'][3];?></label><br><br>
                  <label id = "price">Qty: </label><input id = "qtytextbox" name = "mixedQty" type = "number" min="0" id = "mixedQty" value ="<?php echo $_POST['mixedQty']; ?>"><br> 
                     <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"></form><br> 
                     </p></strong>

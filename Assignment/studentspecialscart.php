@@ -1,6 +1,6 @@
 <?php
 session_start();
-header("Location: studentspecials.html");
+header("Location: studentspecials.php");
 $margheritaQty = $_POST['margheritaQty'];
 $hawaiianQty = $_POST['hawaiianQty'];
 $pestoQty = $_POST['pestoQty'];
