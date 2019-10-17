@@ -7,6 +7,12 @@ $user = 'root';
 $passwordLogin = '';
 $database = "pizzadatabase";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
+if(!$pepperoniPrice || !$mushcheesePrice || !$californianPrice || !$mixedPrice)
+{
+    echo "A price is still to be entered, please try again";
+    header("Location: admin.php");
+    exit;
+}
 if(mysqli_connect_errno())
 {
     echo "Error: Could not connect to database, please try again later";

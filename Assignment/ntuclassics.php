@@ -13,7 +13,6 @@
     if(!isset($_SESSION))
     {
         session_start();
-        $_SESSION['cart'] = array();
     }
     $user = 'root';
     $passwordLogin = '';
@@ -38,8 +37,8 @@
         <nav>
             <ul class = "navigationbar">
                 <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
-                <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
-                <li class="navitem"><strong><a href = "promotions.html">Promotions</a></strong></li>
+                <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
+                <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
@@ -119,7 +118,8 @@
                             <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.html">Review Us</a></li>
                             <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
-                            <li><a href = "disclaimers.html">Disclaimers</a></li>
+                            <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
+                            <li class="navitem"><a href = "admin.php">Admin</a></li>
                         </ul>
                     </footer>
                  </div>

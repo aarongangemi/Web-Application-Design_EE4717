@@ -5,7 +5,7 @@ session_start();
     if($pepperoniQty > 0 && isset($pepperoniQty))
     {
         $pizzaName = "Pepperoni Pizza";
-        $subtotal = $pepperoniQty * 10.5;
+        $subtotal = $pepperoniQty * $_SESSION['prices'][0];
         $_SESSION['cart']['pepperoniQty'] = $pepperoniQty;
         $_SESSION['cart']['pepperoniname'] = $pizzaName;
         $_SESSION['cart']['pepperonitotal'] = $subtotal;
@@ -14,7 +14,7 @@ session_start();
     if($mushcheeseQty > 0 && isset($mushcheeseQty))
     {
         $pizzaName = "Mushroom and Cheese Pizza";
-        $subtotal = $mushcheeseQty * 12;
+        $subtotal = $mushcheeseQty * $_SESSION['prices'][1];
         $_SESSION['cart']['mushcheeseQty'] = $mushcheeseQty;
         $_SESSION['cart']['mushcheesename'] = $pizzaName;
         $_SESSION['cart']['mushcheesetotal'] = $subtotal;
@@ -23,7 +23,7 @@ session_start();
     if($californianQty > 0 && isset($californianQty))
     {
         $pizzaName = "Californian Pizza";
-        $subtotal = $californianQty * 14.5;
+        $subtotal = $californianQty * $_SESSION['prices'][2];;
         $_SESSION['cart']['californianQty'] = $californianQty;
         $_SESSION['cart']['californianname'] = $pizzaName;
         $_SESSION['cart']['californiantotal'] = $subtotal;
@@ -32,7 +32,7 @@ session_start();
     if($mixedQty > 0 && isset($mixedQty))
     {
         $pizzaName = "Mixed Pizza";
-        $subtotal = $mixedQty * 16.5;
+        $subtotal = $mixedQty * $_SESSION['prices'][3];;
         $_SESSION['cart']['mixedQty'] = $mixedQty;
         $_SESSION['cart']['mixedname'] = $pizzaName;
         $_SESSION['cart']['mixedtotal'] = $subtotal;

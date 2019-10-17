@@ -11,7 +11,7 @@
             <ul class = "navigationbar">
                 <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
-                <li class="navitem"><strong><a href = "promotions.html">Promotions</a></strong></li>
+                <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
@@ -23,9 +23,31 @@
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
             </div>
     </header>
+    <?php
+    if(!isset($_SESSION['prices']))
+        session_start();
+        $user = 'root';
+        $passwordLogin = '';
+        $database = "pizzadatabase";
+        $db = new mysqli('localhost', $user, $passwordLogin, $database);
+        if(mysqli_connect_errno())
+        {
+            echo "Error: Could not connect to database, please try again later";
+        }
+        $Query = "SELECT Pizza_price FROM pizzas";
+        $result = $db->query($Query);
+        if ($result) {
+        for($i = 0; $i < $result->num_rows; $i++)
+        {
+            $row = $result->fetch_assoc();
+            $_SESSION['prices'][$i] = $row['Pizza_price'];
+        }
+        }
+        $db->close();
     
+        ?>
     <table><form action = "updateNTUClassics.php" method="POST">
-        <?php session_start();?>
+        <?php if(!$_SESSION){session_start();}?>
         <b><label>NTU Classics</label></b>
         <tr>
             <th>Pizza Name</th>
@@ -72,6 +94,27 @@
         <tr>
             <td>NTU's Vegetarian Pizza</td>
             <td><input type = "text" name = "newvegetarianprice" value= "<?php echo $_SESSION['prices'][7]; ?>"></td>
+            <td><input type = "submit"></td>
+        </tr>
+        </form>
+        <table><form action = "updatePromotions.php" method="POST"><br>
+        <b><label>NTU Promotions</label></b>
+        <tr>
+            <th>Pizza Name</th>
+            <th>New Price</th>
+            <th>Submit</th>
+        </tr>
+        <tr>
+            <td>2 Large Pizza's for $20</td>
+            <td><input type = "text" name = "2largepizzasprice" value= "<?php echo $_SESSION['prices'][8]; ?>"></td>
+        </tr>
+        <tr>
+            <td>Feed the Family for $15</td>
+            <td><input type = "text" name = "familyfeedprice" value= "<?php echo $_SESSION['prices'][9]; ?>"></td>
+        </tr>
+        <tr>
+            <td>Kids Pizza for $8</td>
+            <td><input type = "text" name = "kidspizzaprice" value= "<?php echo $_SESSION['prices'][10]; ?>"></td>
             <td><input type = "submit"></td>
         </tr>
         </form>
