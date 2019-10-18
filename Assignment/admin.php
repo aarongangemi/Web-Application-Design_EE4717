@@ -10,7 +10,7 @@
     <header>
             <ul class = "navigationbar">
                 <li class="navitem"><strong><a href = "index.html"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
-                <li class="navitem"><strong><a href = "ntuclassics.html">Menu</a></strong></li>
+                <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
                 <li><strong><a href = "review.html">Review</a></strong></li>
@@ -52,7 +52,6 @@
         <tr>
             <th>Pizza Name</th>
             <th>New Price</th>
-            <th>Submit</th>
         </tr>
         <tr>
             <td>NTU's Pepperoni Pizza</td>
@@ -77,7 +76,6 @@
         <tr>
             <th>Pizza Name</th>
             <th>New Price</th>
-            <th>Submit</th>
         </tr>
         <tr>
             <td>NTU's Margherita Pizza</td>
@@ -102,7 +100,6 @@
         <tr>
             <th>Pizza Name</th>
             <th>New Price</th>
-            <th>Submit</th>
         </tr>
         <tr>
             <td>2 Large Pizza's for $20</td>

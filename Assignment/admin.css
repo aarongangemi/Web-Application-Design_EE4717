@@ -1,7 +1,21 @@
-table,th,td{
+table{
     margin-left: 200px;
     border: 1px solid black;
+    border: none;
 }
 label{
     margin-left: 200px;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th{
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+td{
+    color: yellowgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
