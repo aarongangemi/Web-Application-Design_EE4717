@@ -1,5 +1,21 @@
 <?php
     session_start();
+    if(!isset($_SESSION['cafesingletotal']))
+    {
+        $_SESSION['cafesingletotal'] = 0;
+    }
+    if(!isset($_SESSION['cafesingleqty']))
+    {
+        $_SESSION['cafesingleqty'] = 0;
+    }
+    if(!isset($_SESSION['cafedoubletotal']))
+    {
+        $_SESSION['cafedoubletotal'] = 0;
+    }
+    if(!isset($_SESSION['cafedoubleqty']))
+    {
+        $_SESSION['cafedoubleqty'] = 0;
+    }
     $cafeQty = $_POST['CafeQty'];
     if(isset($_POST['radioButton']))
     {
@@ -16,6 +32,8 @@
                while($row = $result->fetch_assoc()) {
                   $_SESSION['cafeprice'] = $row['CoffeePrice'] * $cafeQty;
                   echo $_SESSION['cafeprice'];
+                  $_SESSION['cafesingletotal'] += $_SESSION['cafeprice'];
+                  $_SESSION['cafesingleqty'] += $cafeQty;
                 }
             }
             $db->close();
@@ -33,6 +51,8 @@
                while($row = $result->fetch_assoc()) {
                   $_SESSION['cafeprice'] = $row['CoffeePrice'] * $cafeQty;
                   echo $_SESSION['cafeprice'];
+                  $_SESSION['cafedoubletotal'] += $_SESSION['cafeprice'];
+                  $_SESSION['cafedoubleqty'] += $cafeQty;
                 }
             }
             $db->close();

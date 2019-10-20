@@ -1,5 +1,13 @@
 <?php
     session_start();
+    if(!isset($_SESSION['javatotal']))
+    {
+        $_SESSION['javatotal'] = 0;
+    }
+    if(!isset($_SESSION['javaQty']))
+    {
+        $_SESSION['javaQty'] = 0;
+    }
     $javaQty = $_POST['javaqty'];
     $user = 'root';
     $password = '';
@@ -12,6 +20,8 @@
        while($row = $result->fetch_assoc()) {
           $_SESSION['javaprice'] = $row['CoffeePrice'] * $javaQty;
           echo $_SESSION['javaprice'];
+          $_SESSION['javatotal'] += $_SESSION['javaprice'];
+          $_SESSION['javaQty'] += $javaQty;
         }
     }
     $db->close();

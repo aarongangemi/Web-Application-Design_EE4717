@@ -16,7 +16,7 @@
                 <ul id="sitelist">
                     <li><a href = "menu.php" style="color: #aa7400">Products/Menu</a></li>
                     <li><a href = "admin.php" style="color: #aa7400">Price</a></li>
-                    <li><a href = "admin.php" style="color: #aa7400">Update</a></li>
+                    <li><a href = "sales.php" style="color: #aa7400">Sales</a></li>
                 </ul>
             </nav>
         </div>

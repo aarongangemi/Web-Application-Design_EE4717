@@ -15,7 +15,7 @@
             <nav>
                 <ul id="sitelist">
                     <li><a href="index.html" style="color: #aa7400">Home</a></li>
-                    <li><a href="menu.html"style="color: #aa7400">Menu</a></li>
+                    <li><a href="menu.php"style="color: #aa7400">Menu</a></li>
                     <li><a href="music.html"style="color: #aa7400">Music</a></li>
                     <li><a href="jobs.html"style="color: #aa7400">Jobs</a></li>
                     <li><a href="admin.php"style="color: #aa7400">Admin</a></li>
@@ -145,7 +145,20 @@
                         <td><label><?php if(!isset($_SESSION['cappprice'])){echo 0;}else{echo "$".$_SESSION['cappprice'];}?></label>
                     </tr>
                 </table>
-                <label id = "floatcost"><?php $total = $_SESSION['javaprice'] + $_SESSION['cafeprice'] + $_SESSION['cappprice']; echo "Total Cost: ".$total;?></label>
+                <label id = "floatcost"><?php 
+                if(!isset($_SESSION['javaprice']))
+                {
+                    $_SESSION['javaprice'] = 0;
+                }
+                if(!isset($_SESSION['cafeprice']))
+                {
+                    $_SESSION['cafeprice'] = 0;
+                }
+                if(!isset($_SESSION['cappprice']))
+                {
+                    $_SESSION['cappprice'] = 0;
+                }
+                $total = $_SESSION['javaprice'] + $_SESSION['cafeprice'] + $_SESSION['cappprice']; echo "Total Cost: ".$total;?></label>
             </div>
         </div>
     </div>
