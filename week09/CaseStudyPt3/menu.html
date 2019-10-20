@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lighthouse Island Bistro</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="menuCSS.css">
+</head>
+<body>
+    <script type = "text/javascript" src = menuScript.js></script>
+    <div id="wrapper">
+        <header>
+            <h1><img src="text.PNG" width = 750 height = 100 alt = "JavaJam Coffee House" class = center> </h1>
+        </header>   
+        <div id ="leftcolumn">
+            <nav>
+                <ul id="sitelist">
+                    <li><a href="index.html" style="color: #aa7400">Home</a></li>
+                    <li><a href="menu.html"style="color: #aa7400">Menu</a></li>
+                    <li><a href="music.html"style="color: #aa7400">Music</a></li>
+                    <li><a href="jobs.html"style="color: #aa7400">Jobs</a></li>
+                    <li><a href="admin.php"style="color: #aa7400">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="rightcolumn">
+            <div class="content">
+                <h2>Coffee at JavaJam</h2>
+                <table border = "0">
+                    <tr>
+                        <th>Coffee Name</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                    <td><strong>Just Java</strong></td>
+                    <td>Regular house blend, decaffeinated coffee, or flavor of<br>
+                        the day.<br>
+                        <label> <input type = "radio"  name = "radioButton" value = "2.00" onclick="calculateCost('EndlessCup')"/>
+                            Endless Cup 2.00
+                    </label><br /> </td>
+                    <td><input type="text" id = "Just Java" size="2" value="0"></td>
+                    <td><input type="text" id = "JustJavaTotal" size="5"></td>    
+                    </tr>
+                    <tr>
+                        <td><strong>Cafe au Lait</strong></td>
+                        <td>House blended coffee infused into a smooth, steamed<br> milk<br>
+                        <form id = form1 action="">  
+                        <label> <input type = "radio"  name = "radioButton" value = "2.00" onclick="calculateCost('CafeSingle')"/>
+                                Single $2.00 </label><br />
+                        <label> <input type = "radio"  name = "radioButton" value = "3.00" onclick="calculateCost('CafeDouble')"/>
+                                Double $3.00 </label><br /></td>    
+                        </form>
+                        <td><input type="text" id = "Cafe au Lait" size="2" value="0"></td>
+                        <td><input type="text" id = "CafeauLaitTotal" size="5"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Iced Cappucino</strong></td>
+                        <td>Sweetened espresso blended with icy-cold milk and<br>
+                             served in a chilled glass<br>
+                        <form id = form2 action="">      
+                             <label> <input type = "radio"  name = "radioButton" value = "4.75" onclick="calculateCost('IcedCappSingle')"/>
+                                Single $4.75 </label><br />
+                                <label> <input type = "radio"  name = "radioButton" value = "5.75" onclick="calculateCost('IcedCappDouble')"/>
+                                Double $5.75 </label><br /></td>
+                        </form>        
+                        <td><input type="text" id = "Iced Cappucino" size="2" value="0"></td>
+                        <td><input type="text" id = "IcedCappucinoTotal" size="5"></td>
+                    </tr>
+                </table>
+                <input id = "floatcost" type = "button"  value = "Total Cost" onclick = "computeCost();" />
+                <label id = "floatcost">Total Cost:
+                <input type ="text" size="5" id = "totalCost"></label>
+            </div>
+        </div>
+    </div>
+    <footer><p>Copyright &copy; 2019 JavaJam Coffee House<br>
+        <a href="mailto:aaron@gangemi.com">aaron@gangemi.com</a>
+    </p></footer>
+</body>

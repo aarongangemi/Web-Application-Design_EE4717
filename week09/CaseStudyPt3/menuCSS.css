@@ -1,0 +1,92 @@
+body {font-family:Verdana, Arial, sans-serif;
+      background-color: rgb(238, 210, 158);
+}
+#wrapper { background-color: rgb(204, 182, 146); 
+           width: 90%;
+		   margin: auto;
+           min-width:850px;
+} 
+#leftcolumn { float: left;
+	          width: 150px;
+} 
+#rightcolumn { margin-left: 155px;
+               background-color: #f0e6c5;
+               min-width: 155px;
+} 
+header { background-color: #d4b48e;
+        color: rgb(201, 179, 132); 
+        font-size: 150%; 
+        padding: 10px 10px 10px 155px;
+}
+h1{
+    padding-left: 150px;
+}
+.content {padding: 20px 150px 350px 20px; 
+} 
+#floatright { margin: 70px;
+             float: right;
+}
+#floatcost{
+    float: right;
+    margin: 120px;
+    min-width: 155px;
+}
+#floatparagraph{margin: 0px;
+            }
+
+#sitelist{
+      font-family: sans-serif, Georgia;}            
+nav ul { list-style-type: none;
+}
+nav a {text-decoration: none;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 150px;
+    width: 60%;
+    padding-right: 25%;
+}
+
+footer {background-color: #cea576;
+        width: 90%;
+        min-width: 850px;
+        font-size:70%;
+        font-style: italic;
+         text-align: center;
+		 clear: right;
+         padding-bottom:30px;
+         padding-top: 10px;
+         margin:auto;
+}	
+input.largebox{
+    transform: scale(3);
+    margin-left: 70px;
+}
+ul
+{
+    list-style-position: outside;
+}	
+table
+{
+    margin: auto; width: 150px; min-width: 155px; 
+}
+td, th{
+    padding: 5px; font-family: Arial, sans-serif; border-style: none; min-width: 155px;
+}
+caption{
+    font-family: Verdana, sans-serif; font-weight: bold;
+                    font-size: 1.2em; padding-bottom: 5px;
+                }
+tr:nth-child(even){
+    background-color: #cea576;
+                                color: black
+                            }
+
+
+                                
+                                
+                 
+
+
