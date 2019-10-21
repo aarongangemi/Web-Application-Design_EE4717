@@ -34,7 +34,7 @@ if($result->num_rows > 0)
         $_SESSION['loggedinUser']['isLoggedIn'] = TRUE;
         break; //Ensures only produces 1 result
     }
-    header("Location: index.html");
+    header("Location: index.php");
 }
 else
 {

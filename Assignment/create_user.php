@@ -40,8 +40,7 @@ $_SESSION['loggedinUser']['fullname'] = $fullname;
 $_SESSION['loggedinUser']['email'] = $emailAddress;
 $_SESSION['loggedinUser']['DOB'] = $DOB;
 $_SESSION['loggedinUser']['deliveryAddress'] = $deliveryAddress;
-$_SESSION['loggedinUser']['isLoggedIn'] = TRUE;
-header("Location: index.html");
+header("Location: index.php");
 ?>
 </body>
 </html>

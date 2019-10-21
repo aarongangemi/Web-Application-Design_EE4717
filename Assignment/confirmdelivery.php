@@ -28,5 +28,5 @@ $result = $db->query($query);
 }
 addOrderToDatabase();
 mailUser();
-header("Location: index.html");
+header("Location: index.php");
 ?>

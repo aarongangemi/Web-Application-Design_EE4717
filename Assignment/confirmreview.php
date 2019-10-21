@@ -10,5 +10,5 @@
     $message = wordwrap($message, 50);
     $headers = 'From: f35ee@localhost' . "\r\n".'Reply-To: f35e@localhost'.'X-Mailer: PHP/'.phpversion();
     mail($to,$subject,$message,$headers,'-ff32ee@localhost');
-    header("Location: index.html");
+    header("Location: index.php");
 ?>
