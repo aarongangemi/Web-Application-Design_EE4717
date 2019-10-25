@@ -1,8 +1,7 @@
 .column{
     float: left;
-    padding:22px;
     box-sizing: border-box;
-    width: 30%;
+    width: 21%;
     margin-left:50px;
 }
 
@@ -35,4 +34,8 @@
 }
 #cartbutton{
     margin-left: 150px;
+}
+
+.qty{
+    width: 100px;
 }

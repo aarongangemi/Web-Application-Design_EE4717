@@ -71,10 +71,6 @@ ul.menunavigationbar li a:hover{
     float: right;
 }
 
-#qtytextbox{
-    width: 100px;
-}
-
 #price{
     color: aqua;
     font-family: 'Courier New', Courier, monospace;
@@ -84,3 +80,6 @@ ul.menunavigationbar li a:hover{
     margin-right: 100px;
 }
 
+.qty{
+    width:100px;
+}

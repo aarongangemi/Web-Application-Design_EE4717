@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="menucss.css">
 <script type="text/javascript" src="cartJS.js"></script>
+<script type="text/javascript" src="menucart.js"></script>
 </head>
 <body>
     <?php
@@ -45,7 +46,7 @@
         </nav>
             <div>
                   <strong><a id = "signuplabel" href="signUpLogin.html"><?php if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
-                  <a id = "ordernowlabel" href = "cartController.php"><img id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px"></a>
+                  <form id = "ordernowlabel" action = "ntuclassicscart.php" method="POST"><input type = "image" id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px">
             </div>
             <div>
                <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
@@ -67,9 +68,9 @@
           <br>With a crust that is cooked to<br> perfection.Spread with
            the secret<br> cheese and covered with NTU's<br>
             famous pepperoni. Be sure to <br>come and get one now!!!<br><br>
-            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][0];?></label>
-            <form action="ntuclassicscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "pepperoniQty" type = "number" min="0" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
-            <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+            <label id = "price" name = "peppprice"><?php echo "Price = ".$_SESSION['prices'][0];?></label><br><br>
+            <label id = "price">Qty: </label><input id = "peppqtytextbox" class="qty" name = "pepperoniQty" type = "number" min="0" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
+            <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addPepperoniToCart()"><br>
             </p></strong>
             </div>
         </div>    
@@ -81,9 +82,9 @@
             change up from<br> the traditional margherita pizza. <br>Enjoy a fresh base 
             topped with<br> warm mozzarella cheese. Spread<br> with
                our famous mushroom.Be sure<br> to come and get one now!!!<br><br>
-               <label id = "price"><?php echo "Price = ".$_SESSION['prices'][1];?></label><br><br>
-               <form action="ntuclassicscart.php" method="POST"><label id = "price">Qty: </label><input id = "qtytextbox" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
-                <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+               <label id = "price" name = "mushprice"><?php echo "Price = ".$_SESSION['prices'][1];?></label><br><br>
+               <label id = "price">Qty: </label><input id = "mushqtytextbox" class="qty" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
+               <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addMushroomToCart()"><br>
                 </p></strong>
                 </div>
             </div>   
@@ -95,25 +96,11 @@
              <br>With a crust surrounded by our<br> mouth-watering napoletana sauce.<br>
              Smothered with our secret<br> cheese, basil, ham and pineapple.<br> 
              Be sure to come and get one now!!!<br><br>
-            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][2];?></label><br><br>
-            <label id = "price">Qty: </label><input id = "qtytextbox" name = "californianQty" type = "number" min="0" id = "californianQty" value ="<?php echo $_POST['californianQty']; ?>"><br> 
-            <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"><br> 
+            <label id = "price" name = "calprice"><?php echo "Price = ".$_SESSION['prices'][2];?></label><br><br>
+            <label id = "price">Qty: </label><input id = "calqtytextbox" name = "californianQty" class="qty" type = "number" min="0" id = "californianQty" value ="<?php echo $_POST['californianQty']; ?>"></form><br> 
+            <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addCalifornianToCart()"><br>
                 </p></strong>
-                </div>
-            </div>   
-            <div class="row">
-                <div class = "column">
-                <strong><em><label id = "pizzatitle" >NTU's Mixed Pizza</label></em></strong>
-                <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/mixedpizza.PNG" alt = "Mixed pizza image" width = "200" height="200">
-                <br>NTU's Mixed Pizza is our<br>
-                 most popular pizza. Our Pizza<br> gives you a variety
-                 to enjoy.<br>From prawn to pineapple, the<br> pizza is topped with every<br> ingredient we offer.
-                 Be sure to <br>come and get one now!!!<br><br>
-                 <label id = "price"><?php echo "Price = ".$_SESSION['prices'][3];?></label><br><br>
-                 <label id = "price">Qty: </label><input id = "qtytextbox" name = "mixedQty" type = "number" min="0" id = "mixedQty" value ="<?php echo $_POST['mixedQty']; ?>"><br> 
-                    <input type = image id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px"></form><br> 
-                    </p></strong>
-                    <footer>
+                <footer>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.html">Review Us</a></li>
@@ -122,7 +109,14 @@
                             <li class="navitem"><a href = "admin.php">Admin</a></li>
                         </ul>
                     </footer>
-                 </div>
-            </div>     
+                </div>
+            </div>   
+            <div class = "row">
+            <div class = "column">
+                <b><label>Cart List:</label></b>
+                <ul id = "cartList">
+                </ul>
+            </div>
+        </div>  
 </body>
 </html>

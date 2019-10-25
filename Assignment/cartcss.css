@@ -38,3 +38,7 @@ td, th{
     margin-right: 100px;
     display: block;
 }
+
+#delBtn{
+    color: red;
+}

@@ -65,11 +65,6 @@
             <td>NTU's Californian Pizza</td>
             <td><input type = "text" name = "newcalifornianprice" value= "<?php echo $_SESSION['prices'][2]; ?>"></td>
         </tr>
-        <tr>
-            <td>NTU's Mixed Pizza</td>
-            <td><input type = "text" name = "newmixedprice" value= "<?php echo $_SESSION['prices'][3]; ?>"></td>
-            <td><input type = "submit"></td>
-        </tr>
         </form>
         <table><form action = "updatestudentspecials.php" method="POST"><br>
         <b><label>NTU Student Specials</label></b>
@@ -88,11 +83,6 @@
         <tr>
             <td>NTU's Pesto and Peri Chicken Pizza</td>
             <td><input type = "text" name = "newpestoperiprice" value= "<?php echo $_SESSION['prices'][6]; ?>"></td>
-        </tr>
-        <tr>
-            <td>NTU's Vegetarian Pizza</td>
-            <td><input type = "text" name = "newvegetarianprice" value= "<?php echo $_SESSION['prices'][7]; ?>"></td>
-            <td><input type = "submit"></td>
         </tr>
         </form>
         <table><form action = "updatePromotions.php" method="POST"><br>
