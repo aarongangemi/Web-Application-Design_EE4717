@@ -4,7 +4,7 @@
     text-align: center;
     padding: 15px 10px;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     color: yellowgreen;
     float: left;
     border-right: 2px solid #bbb;
@@ -27,7 +27,7 @@ ul.menunavigationbar{
     font-size: 20px;
     text-align: center;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
     float: left;
 }
@@ -43,7 +43,7 @@ ul.menunavigationbar li a:hover{
 #pepperoniPizzaText{
     font-family: 'Courier New', Courier, monospace;
 }
-#addicon{
+.addicon{
     margin-left: 110px;
 }
 .border{
@@ -82,4 +82,28 @@ ul.menunavigationbar li a:hover{
 
 .qty{
     width:100px;
+}
+
+#qtyLabel{
+    margin-left: 100px;
+}
+
+table{
+    border: 1px solid black;
+}
+
+th{
+    color: yellowgreen;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+}
+td{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid black;
+}
+
+#tablelabel{
+    font-family: 'Courier New', Courier, monospace;
+    color: aqua;
 }

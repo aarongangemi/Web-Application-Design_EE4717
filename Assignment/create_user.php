@@ -35,11 +35,11 @@ $query = "SELECT Customer_ID FROM ntupizzeria WHERE Email = '$emailAddress' AND 
 $result = $db->query($query);
 $row = $result->fetch_assoc();
 $_SESSION['loggedinUser']['customerID'] = $row['Customer_ID'];
-$db->close();
 $_SESSION['loggedinUser']['fullname'] = $fullname;
 $_SESSION['loggedinUser']['email'] = $emailAddress;
 $_SESSION['loggedinUser']['DOB'] = $DOB;
 $_SESSION['loggedinUser']['deliveryAddress'] = $deliveryAddress;
+$db->close();
 header("Location: index.php");
 ?>
 </body>

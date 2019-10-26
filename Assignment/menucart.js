@@ -1,6 +1,12 @@
-document.getElementById("addicon").addEventListener("click", addPepperoniToCart);
-document.getElementById("addicon").addEventListener("click", addMushroomToCart);
-document.getElementById("addicon").addEventListener("click", addCalifornianToCart);
+document.getElementById("add1").addEventListener("click", addPepperoniToCart);
+document.getElementById("add2").addEventListener("click", addMushroomToCart);
+document.getElementById("add3").addEventListener("click", addCalifornianToCart);
+document.getElementById("add1").addEventListener("click", addMargheritaToCart);
+document.getElementById("add2").addEventListener("click", addHawaiianToCart);
+document.getElementById("add3").addEventListener("click", addPestoToCart);
+document.getElementById("add1").addEventListener("click", addPromo1);
+document.getElementById("add2").addEventListener("click", addPromo2);
+document.getElementById("add3").addEventListener("click", addPromo3);
 function addPepperoniToCart()
 {
     var qty = document.getElementById("peppqtytextbox").value;
@@ -9,12 +15,13 @@ function addPepperoniToCart()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "NTU's Pepperoni Pizza";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 function addMushroomToCart()
 {
@@ -24,12 +31,13 @@ function addMushroomToCart()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
-    var item = "NTU's Mushroom and Cheese Pizza";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var cartList = document.getElementById("cartTable");
+    var item = "Mushroom and Cheese Pizza";
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 function addCalifornianToCart()
 {
@@ -39,12 +47,13 @@ function addCalifornianToCart()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "NTU's Californian Pizza";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 function addMargheritaToCart()
 {
@@ -54,12 +63,13 @@ function addMargheritaToCart()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "NTU's Margherita Pizza";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 function addHawaiianToCart()
 {
@@ -69,12 +79,13 @@ function addHawaiianToCart()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "NTU's Hawaiian Pizza";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 
 function addPestoToCart()
@@ -85,12 +96,13 @@ function addPestoToCart()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
-    var item = "NTU's Pesto and Peri Chicken Pizza";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var cartList = document.getElementById("cartTable");
+    var item = "NTU's Pesto Chicken Pizza";
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 
 function addPromo1()
@@ -101,12 +113,13 @@ function addPromo1()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "2 Large Pizzas for $20";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 function addPromo2()
 {
@@ -116,12 +129,13 @@ function addPromo2()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "Feed the Family for $15";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }
 
 function addPromo3()
@@ -132,10 +146,11 @@ function addPromo3()
         alert("Please enter a qty greater than 0");
         return false;
     }
-    var cartList = document.getElementById("cartList");
+    var cartList = document.getElementById("cartTable");
     var item = "Kids Pizza for $8";
-    var node = document.createElement("LI");
-    var text = document.createTextNode(item.concat(" | ").concat("Qty:",qty));
-    node.appendChild(text);
-    cartList.appendChild(node);
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);;
 }

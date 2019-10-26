@@ -17,11 +17,18 @@
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                 <strong><a id = "signuplabel" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                <div class = "dropdown">
+                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                 <div class = "dropdown-content">
+                     <a href="logout.php">Log Out</a>
+                     <a href="ntuclassics.php">Order Now</a>
+                     <a href="cartController.php">My Cart</a>
+                </div>
+            </div>
                  <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
             </div>
             <div>
-               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
+               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
             </div>
     </header>
     <div id = "scrolltop">
@@ -38,7 +45,7 @@
             <li class="navitem"><a href = "review.html">Review Us</a></li>
             <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-            <li class="navitem"><a href = "admin.php">Admin</a></li>
+            
         </ul>
     </footer>
     </div>

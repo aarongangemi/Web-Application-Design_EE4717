@@ -45,11 +45,19 @@
             </ul>
         </nav>
             <div>
-                <strong><a id = "signuplabel" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                    <div>
+                            <div class = "dropdown">
+                             <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                             <div class = "dropdown-content">
+                                 <a href="logout.php">Log Out</a>
+                                 <a href="ntuclassics.php">Order Now</a>
+                                 <a href="cartController.php">My Cart</a>
+                            </div>
+                        </div>
                 <form id = "ordernowlabel" action = "studentspecialscart.php" method="POST"><input type = "image" id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px">
             </div>
             <div>
-               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
+               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
             <div>
                     <nav>
@@ -70,7 +78,7 @@
          Be sure to <br>come and get one now!!!<br><br>
          <label id = "price"><?php echo "Price = ".$_SESSION['prices'][4];?></label><br><br>
          <label id = "price">Qty: </label><input id = "margqtytextbox" class="qty" type = "number" min="0" name = "margheritaQty" id = "margheritaQty" value ="<?php echo $_POST['margheritaQty']; ?>"><br> 
-            <img id = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addMargheritaToCart()"><br> 
+            <img id = "image" class = "addicon" id = "add1" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addMargheritaToCart()"><br> 
             </p></strong>
             </div>
         </div>    
@@ -83,7 +91,7 @@
             Enjoy a fresh woodfired<br> base and that delicious crunch.<br> Be sure to come and get one now!!!<br><br>
             <label id = "price"><?php echo "Price = ".$_SESSION['prices'][5];?></label><br><br>
             <label id = "price">Qty: </label><input id = "hawqtytextbox" type = "number" min="0" name = "hawaiianQty" class="qty" id = "hawaiianQty" value ="<?php echo $_POST['hawaiianQty']; ?>"><br> 
-                <img id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addHawaiianToCart()"><br> 
+                <img class = "addicon" src = "images/addicon.PNG" id = "add2" alt = "add icon here" width = "60px" height="50px" onclick="addHawaiianToCart()"><br> 
                 </p></strong>
                 </div>
             </div>   
@@ -97,14 +105,14 @@
              Be sure to come and get one now!!!<br><br>
              <label id = "price"><?php echo "Price = ".$_SESSION['prices'][6];?></label><br><br>
              <label id = "price">Qty: </label><input id = "pestoqtytextbox" type = "number" min="0" name = "pestoQty" class="qty" id = "pestoQty" value ="<?php echo $_POST['pestoQty']; ?>"><form><br></strong> 
-                <img id = "image" id = "addicon" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick = "addPestoToCart()"><br> 
+                <img id = "image" class = "addicon" id = "add3" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick = "addPestoToCart()"><br> 
                 <footer>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.html">Review Us</a></li>
                             <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                            <li class="navitem"><a href = "admin.php">Admin</a></li>
+                            
                         </ul>
                     </footer>
                 </p>
@@ -112,9 +120,13 @@
             </div> 
             <div class = "row">
             <div class = "column">
-                <b><label>Cart List:</label></b>
-                <ul id = "cartList">
-                </ul>
+                    <b><p id = "tablelabel">Items Added:</p></b><br>
+                    <table id = "cartTable">
+                        <tr>
+                            <th>Cart Item</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </table>
             </div>
         </div>  
 </body>

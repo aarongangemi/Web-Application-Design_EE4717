@@ -4,7 +4,7 @@
     text-align: center;
     padding: 15px 10px;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
     float: left;
     border-right: 2px solid #bbb;
@@ -17,7 +17,7 @@
     font-size: 20px;
     text-align: center;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     color: yellowgreen;
     float: left;
 }

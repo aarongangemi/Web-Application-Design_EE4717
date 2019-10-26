@@ -11,7 +11,7 @@
     text-decoration: none;
     color: greenyellow;
     margin-left: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     min-width: 10%;
     width:15%;
@@ -85,9 +85,45 @@ li a{
     text-align: center;
     padding: 15px 10px;
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     color: white;
+    
 }
 li:last-child{
     border-right: none;
+}
+
+.droptxt{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+}
+
+.dropdown-content a{
+    color: greenyellow;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dropdown-content a:hover{
+    background-color: gray;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
 }

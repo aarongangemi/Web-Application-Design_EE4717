@@ -16,11 +16,19 @@
                 <li><strong><a href = "review.html">Review</a></strong></li>
             </ul>
             <div>
-                <strong><a id = "signuplabel" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+            <div>
+                <div class = "dropdown">
+                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                 <div class = "dropdown-content">
+                     <a href="logout.php">Log Out</a>
+                     <a href="ntuclassics.php">Order Now</a>
+                     <a href="cartController.php">My Cart</a>
+                </div>
+            </div>
                  <form action = "deliveryconfirmation.php" method = "POST"><a id = "ordernowlabel"><input type = "image" src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
             </div>
             <div>
-               <img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px"><br><br>
+               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px"><br><br>
             </div>
             <div id = "column">
             <textarea id = "customisationsbox" name = "customisations" id = "customisations" rows = "25" cols="80" placeholder="Enter Customisations here"></textarea></form>
