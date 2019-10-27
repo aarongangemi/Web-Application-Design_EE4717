@@ -20,12 +20,13 @@
                 <div class = "dropdown">
                  <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
                  <div class = "dropdown-content">
-                     <a href="logout.php">Log Out</a>
+                     <a href="signUpLogin.html">Sign Up</a>
+                     <a href="logout.php"><?php if(!isset($_SESSION['loggedinUser'])){echo "Log In";}else{ echo "Log Out";}?></a>
                      <a href="ntuclassics.php">Order Now</a>
                      <a href="cartController.php">My Cart</a>
                 </div>
             </div>
-                 <form action = "deliveryconfirmation.php" method = "POST"><a id = "ordernowlabel"><input type = "image" src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
+                 <form action = "deliveryconfirmation.php" method = "POST"><a id = "ordernowlabel"><input type = "image" id = "submitOrder" src = "images/button_ready-for-delivery.PNG" width = 220px height = 40px></a>
             </div>
             <div>
                <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px"><br><br>
@@ -71,10 +72,29 @@
                         echo"</table><br><br><br><br>";
                         $_SESSION['loggedinUser']['total'] = $total;
                     }
+                    if($_SESSION['loggedinUser']['total'] == 0)
+                    {
+                        echo "<script type='text/javascript'>
+                        alert('Cart must be more than 0, Please go back');
+                        var submitBtn = document.getElementById('submitOrder');
+                        submitBtn.disabled = true;
+                        </script>";
+                    }
+                    else
+                    {
+                        echo "<script type='text/javascript'>
+                        var submitBtn = document.getElementById('submitOrder');
+                        submitBtn.disabled = false;
+                        </script>";
+                    }
                 }
                 if(!isset($_SESSION['cart']))
                 {
                     $_SESSION['cart']['No Item Message'] = "No items in Cart";
+                }
+                if(!isset($_SESSION['loggedinUser']))
+                {
+                    header("Location: signupLogin.html");
                 }
                 createTableCart($_SESSION['cart']);
                 ?>
