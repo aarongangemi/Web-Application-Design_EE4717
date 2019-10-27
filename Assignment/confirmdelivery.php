@@ -27,6 +27,8 @@ $query = 'INSERT INTO orders(Customer_ID,Total_Paid,Delivery_Address) VALUES ("'
 $result = $db->query($query);
 }
 addOrderToDatabase();
+unset($_SESSION['cart']);
+$_SESSION['noOfItems'] = 0;
 mailUser();
 header("Location: index.php");
 ?>

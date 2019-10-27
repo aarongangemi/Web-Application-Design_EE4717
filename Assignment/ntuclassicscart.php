@@ -1,5 +1,5 @@
 <?php
-session_start();   
+session_start(); 
     $pepperoniQty = $_POST['pepperoniQty'];
     if($pepperoniQty > 0 && isset($pepperoniQty))
     {
@@ -8,6 +8,8 @@ session_start();
         $_SESSION['cart']['pepperoniQty'] += $pepperoniQty;
         $_SESSION['cart']['pepperoniname'] = $pizzaName;
         $_SESSION['cart']['pepperonitotal'] = $subtotal;
+        $_SESSION['noOfItems'] = $_SESSION['noOfItems'] + 1;
+         
     }
     $mushcheeseQty = $_POST['mushcheeseQty'];
     if($mushcheeseQty > 0 && isset($mushcheeseQty))
@@ -17,6 +19,7 @@ session_start();
         $_SESSION['cart']['mushcheeseQty'] += $mushcheeseQty;
         $_SESSION['cart']['mushcheesename'] = $pizzaName;
         $_SESSION['cart']['mushcheesetotal'] = $subtotal;
+        $_SESSION['noOfItems'] = $_SESSION['noOfItems'] + 1;
     }
     $californianQty = $_POST['californianQty'];
     if($californianQty > 0 && isset($californianQty))
@@ -26,6 +29,15 @@ session_start();
         $_SESSION['cart']['californianQty'] += $californianQty;
         $_SESSION['cart']['californianname'] = $pizzaName;
         $_SESSION['cart']['californiantotal'] = $subtotal;
+        $_SESSION['noOfItems'] = $_SESSION['noOfItems'] + 1;
     }
-    header("Location: cartController.php");
+    if($_SESSION['noOfItems'] == 0)
+    {
+        header("Location: ntuclassics.php");
+        $_SESSION['alertUser'] = true;
+    }
+    else
+    {
+        header("Location: cartController.php");
+    }
 ?>

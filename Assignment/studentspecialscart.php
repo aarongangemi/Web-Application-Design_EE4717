@@ -10,6 +10,7 @@ if($margheritaQty > 0 && isset($margheritaQty))
     $_SESSION['cart']['margheritaqty'] += $margheritaQty;
     $_SESSION['cart']['margheritaname'] = $pizzaName;
     $_SESSION['cart']['margheritatotal'] = $subtotal;
+    $_SESSION['noOfItems'] = $_SESSION['noOfItems'] + 1;
 }
 if($hawaiianQty > 0 && isset($hawaiianQty))
 {
@@ -18,6 +19,7 @@ if($hawaiianQty > 0 && isset($hawaiianQty))
     $_SESSION['cart']['hawaiianQty'] += $hawaiianQty;
     $_SESSION['cart']['hawaiianname'] = $pizzaName;
     $_SESSION['cart']['hawaiiantotal'] = $subtotal;
+    $_SESSION['noOfItems'] = $_SESSION['noOfItems'] + 1;
 }
 if($pestoQty > 0 && isset($pestoQty))
 {
@@ -26,6 +28,15 @@ if($pestoQty > 0 && isset($pestoQty))
     $_SESSION['cart']['pestoqty'] += $pestoQty;
     $_SESSION['cart']['pestoname'] = $pizzaName;
     $_SESSION['cart']['pestototal'] = $subtotal;
+    $_SESSION['noOfItems'] = $_SESSION['noOfItems'] + 1;
 }
-header("Location: cartController.php");
+if($_SESSION['noOfItems'] == 0)
+{
+    header("Location: ntuclassics.php");
+    $_SESSION['alertUser'] = true;
+}
+else
+{
+    header("Location: cartController.php");
+}
 ?>

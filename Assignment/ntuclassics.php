@@ -15,6 +15,10 @@
     {
         session_start();
     }
+    if(!isset($_SESSION['noOfItems']))
+    {
+        $_SESSION['noOfItems'] = 0;
+    }
     $user = 'root';
     $passwordLogin = '';
     $database = "pizzadatabase";
@@ -114,7 +118,7 @@
                             <li class="navitem"><a href = "review.html">Review Us</a></li>
                             <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                            
+           
                         </ul>
                     </footer>
                 </div>
@@ -129,6 +133,19 @@
                         </tr>
                 </table>
             </div>
-        </div>  
+        </div>
+        <?php
+            if(!isset($_SESSION['alertUser']))
+            {
+                 $_SESSION['alertUser'] = false;
+            }
+            if($_SESSION['alertUser'] == true)
+            {
+                echo "<script type='text/javascript'>
+                alert('Cart must be more than 0, Please go back');
+                </script>";
+                $_SESSION['alertUser'] = false;
+            }
+        ?>
 </body>
 </html>

@@ -129,5 +129,18 @@
                     </table>
             </div>
         </div>  
+        <?php
+                    if(!isset($_SESSION['alertUser']))
+                    {
+                        $_SESSION['alertUser'] = false;
+                    }
+            if($_SESSION['alertUser'] == true)
+            {
+                echo "<script type='text/javascript'>
+                alert('Cart must be more than 0, Please go back');
+                </script>";
+                $_SESSION['alertUser'] = false;
+            }
+        ?>
 </body>
 </html>

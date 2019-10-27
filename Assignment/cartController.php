@@ -72,21 +72,6 @@
                         echo"</table><br><br><br><br>";
                         $_SESSION['loggedinUser']['total'] = $total;
                     }
-                    if($_SESSION['loggedinUser']['total'] == 0)
-                    {
-                        echo "<script type='text/javascript'>
-                        alert('Cart must be more than 0, Please go back');
-                        var submitBtn = document.getElementById('submitOrder');
-                        submitBtn.disabled = true;
-                        </script>";
-                    }
-                    else
-                    {
-                        echo "<script type='text/javascript'>
-                        var submitBtn = document.getElementById('submitOrder');
-                        submitBtn.disabled = false;
-                        </script>";
-                    }
                 }
                 if(!isset($_SESSION['cart']))
                 {
