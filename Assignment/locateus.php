@@ -12,9 +12,19 @@
                 <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
-                <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
-                <li><strong><a href = "review.html">Review</a></strong></li>
+                <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
+                <li><strong><a href = "review.php">Review</a></strong></li>
             </ul>
+            <div>
+                <div class = "dropdown">
+                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.php"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                 <div class = "dropdown-content">
+                     <a href="signUpLogin.php">Sign Up</a>
+                     <a href="logout.php"><?php if(!isset($_SESSION['loggedinUser'])){echo "Log In";}else{ echo "Log Out";}?></a>
+                     <a href="ntuclassics.php">Order Now</a>
+                     <a href="cartController.php">My Cart</a>
+                </div>
+            </div>
             <div>
                  <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
             </div>
@@ -52,8 +62,8 @@
         </div>
                <footer>
                     <ul class = "footerlist">
-                            <li class="navitem"><a href = "locateus.html">Contact us/Locate Us</a></li>
-                            <li class="navitem"><a href = "review.html">Review Us</a></li>
+                            <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
+                            <li class="navitem"><a href = "review.php">Review Us</a></li>
                             <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
                             

@@ -7,7 +7,7 @@ if(isset($_SESSION['loggedinUser']))
     unset($_SESSION['loggedinUser']['email']);
     unset($_SESSION['loggedinUser']['DOB']);
     unset($_SESSION['loggedinUser']['deliveryAddress']);
-    $_SESSION['loggedinUser']['isLoggedIn'] = FALSE;
+    unset($_SESSION['loggedinUser']);
 }
-header("Location: signUpLogin.html");
+header("Location: signUpLogin.php");
 ?>

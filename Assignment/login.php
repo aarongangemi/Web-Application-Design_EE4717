@@ -38,7 +38,7 @@ if($result->num_rows > 0)
 }
 else
 {
-    header("Location: signUpLogin.html");
+    header("Location: signUpLogin.php");
 }
 $db->close();
 ?>

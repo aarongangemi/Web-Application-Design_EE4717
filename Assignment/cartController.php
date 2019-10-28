@@ -12,15 +12,15 @@
                 <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
-                <li class="navitem"><strong><a href = "locateus.html">Locate Us</a></strong></li>
-                <li><strong><a href = "review.html">Review</a></strong></li>
+                <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
+                <li><strong><a href = "review.php">Review</a></strong></li>
             </ul>
             <div>
             <div>
                 <div class = "dropdown">
-                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.html"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.php"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
                  <div class = "dropdown-content">
-                     <a href="signUpLogin.html">Sign Up</a>
+                     <a href="signUpLogin.php">Sign Up</a>
                      <a href="logout.php"><?php if(!isset($_SESSION['loggedinUser'])){echo "Log In";}else{ echo "Log Out";}?></a>
                      <a href="ntuclassics.php">Order Now</a>
                      <a href="cartController.php">My Cart</a>
@@ -79,7 +79,7 @@
                 }
                 if(!isset($_SESSION['loggedinUser']))
                 {
-                    header("Location: signupLogin.html");
+                    header("Location: signUpLogin.php");
                 }
                 createTableCart($_SESSION['cart']);
                 ?>
