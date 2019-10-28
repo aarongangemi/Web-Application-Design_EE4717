@@ -99,7 +99,7 @@
                 <div class = "column">
             <strong><em><label id = "pizzatitle" >NTU's Pesto Peri Chicken Pizza</label></em></strong>
             <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/pestoperichickenpizza.PNG" alt = "Pepperoni pizza image" width = "200" height="200">
-            <br>NTU's Pesto Peri Chieck pizza<br> is a one of a kind.
+            <br>NTU's Pesto Peri Chicken pizza<br> is a one of a kind.
              A base with<br> napoletana sauce replaced with<br> our divine pesto sauce.
              A mouth-<br>watering pizza, smothered with<br> chicken, ham, capsicum and olives.<br> 
              Be sure to come and get one now!!!<br><br>
@@ -110,7 +110,7 @@
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
+                            
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
                             
                         </ul>

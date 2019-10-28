@@ -81,7 +81,7 @@
            the secret<br> cheese and covered with NTU's<br>
             famous pepperoni. Be sure to <br>come and get one now!!!<br><br>
             <label id = "price" name = "peppprice"><?php echo "Price = ".$_SESSION['prices'][0];?></label><br><br>
-            <label id = "price">Qty: </label><input id = "peppqtytextbox" class="qty" name = "pepperoniQty" type = "number" min="0" value ="<?php echo $_POST['pepperoniQty']; ?>"><br> 
+            <label id = "price">Qty: </label><input id = "peppqtytextbox" class="qty" name = "pepperoniQty" type = "number" min="0"><br> 
             <img class = "addicon" id = "add1" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addPepperoniToCart()"><br>
             </p></strong>
             </div>
@@ -95,7 +95,7 @@
             topped with<br> warm mozzarella cheese. Spread<br> with
                our famous mushroom.Be sure<br> to come and get one now!!!<br><br>
                <label id = "price" name = "mushprice"><?php echo "Price = ".$_SESSION['prices'][1];?></label><br><br>
-               <label id = "price">Qty: </label><input id = "mushqtytextbox" class="qty" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty" value ="<?php echo $_POST['mushcheeseQty']; ?>"><br> 
+               <label id = "price">Qty: </label><input id = "mushqtytextbox" class="qty" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty"><br> 
                <img class = "addicon" id = "add2" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addMushroomToCart()"><br>
                 </p></strong>
                 </div>
@@ -109,14 +109,14 @@
              Smothered with our secret<br> cheese, basil, ham and pineapple.<br> 
              Be sure to come and get one now!!!<br><br>
             <label id = "price" name = "calprice"><?php echo "Price = ".$_SESSION['prices'][2];?></label><br><br>
-            <label id = "price">Qty: </label><input id = "calqtytextbox" name = "californianQty" class="qty" type = "number" min="0" id = "californianQty" value ="<?php echo $_POST['californianQty']; ?>"></form><br> 
+            <label id = "price">Qty: </label><input id = "calqtytextbox" name = "californianQty" class="qty" type = "number" min="0" id = "californianQty"></form><br> 
             <img class = "addicon" id = "add3" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addCalifornianToCart()"><br>
                 </p></strong>
                 <footer>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
+                            
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
            
                         </ul>

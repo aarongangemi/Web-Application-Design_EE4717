@@ -7,6 +7,9 @@ document.getElementById("add3").addEventListener("click", addPestoToCart);
 document.getElementById("add1").addEventListener("click", addPromo1);
 document.getElementById("add2").addEventListener("click", addPromo2);
 document.getElementById("add3").addEventListener("click", addPromo3);
+document.getElementById("add1").addEventListener("click", addPromo4);
+document.getElementById("add2").addEventListener("click", addPromo5);
+document.getElementById("add3").addEventListener("click", addPromo6);
 function addPepperoniToCart()
 {
     var qty = document.getElementById("peppqtytextbox").value;
@@ -37,7 +40,7 @@ function addMushroomToCart()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 function addCalifornianToCart()
 {
@@ -53,7 +56,7 @@ function addCalifornianToCart()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 function addMargheritaToCart()
 {
@@ -69,7 +72,7 @@ function addMargheritaToCart()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 function addHawaiianToCart()
 {
@@ -85,7 +88,7 @@ function addHawaiianToCart()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 
 function addPestoToCart()
@@ -102,7 +105,7 @@ function addPestoToCart()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 
 function addPromo1()
@@ -119,7 +122,7 @@ function addPromo1()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 function addPromo2()
 {
@@ -135,7 +138,7 @@ function addPromo2()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }
 
 function addPromo3()
@@ -152,5 +155,56 @@ function addPromo3()
     var cellX = row.insertCell(0);
     var cellY = row.insertCell(1);
     cellX.innerHTML = item;
-    cellY.innerHTML = "Qty: ".concat(qty);;
+    cellY.innerHTML = "Qty: ".concat(qty);
+}
+
+function addPromo4()
+{
+    var qty = document.getElementById("mixedqtytextbox").value;
+    if(qty < 0)
+    {
+        alert("Please enter a qty greater than 0");
+        return false;
+    }
+    var cartList = document.getElementById("cartTable");
+    var item = "NTU Mixed Pizza Promo";
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);
+}
+
+function addPromo5()
+{
+    var qty = document.getElementById("calzoneQty").value;
+    if(qty < 0)
+    {
+        alert("Please enter a qty greater than 0");
+        return false;
+    }
+    var cartList = document.getElementById("cartTable");
+    var item = "Italian Calzone Promo";
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);
+}
+
+function addPromo6()
+{
+    var qty = document.getElementById("sushiQty").value;
+    if(qty < 0)
+    {
+        alert("Please enter a qty greater than 0");
+        return false;
+    }
+    var cartList = document.getElementById("cartTable");
+    var item = "NTU Sushi Pizza Promo";
+    var row = cartList.insertRow(0);
+    var cellX = row.insertCell(0);
+    var cellY = row.insertCell(1);
+    cellX.innerHTML = item;
+    cellY.innerHTML = "Qty: ".concat(qty);
 }

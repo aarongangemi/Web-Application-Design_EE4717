@@ -5,6 +5,7 @@
 <title>NTU Pizzeria - Promotions Page</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="promotionCSS.css">
+<link rel = "stylesheet" href="menucss.css">
 <script type = "text/javascript" src="menucart.js"></script>
 </head>
 <body>
@@ -65,17 +66,25 @@
             <div>
                <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
+            <div>
+                    <nav>
+                    <ul class = "menunavigationbar">
+                        <li class="menunavitem"><strong><a id = "menunavitem" href = "promotions.php">Our Deals</a></strong></li>
+                        <li class="menunavitem"><strong><a id = "menuitemnoborder" href = "promotions2.php">Absolute Steals</a></strong></li>
+                    </ul>
+                    </nav>
+                </div>
     </header>
     <div class="row">
         <div class = "column">
         <strong><em><label id = "pizzatitle" ><?php $str = explode('.',$_SESSION['prices']['2 Large Pizzas']);echo "2 Large Pizza's for $".$str[0];?> </label></em></strong>
         <strong><p id = "pizzaText"><img src = "images/2pizzapromotion.PNG" alt = "Large Pizza image" width = "250" height="200">
-        <br>NTU's large pizza's are some of<br> biggest and cheesiest pizza's<br> in Singapore.
-          Get two 15 inch<br> pizza's for just $20. The pizza's included are meat-lovers and vegetarian.
+        <br>NTU's large pizza's are some of biggest and cheesiest pizza's in Singapore.
+          Get two 15 inch pizza's for just $20. The pizza's included are meat-lovers and vegetarian.
            Filled with all the delightful meat and vegies.
-         <br>Be sure to come and get one now!!!<br><br>
+         Be sure to come and get one now!!!<br><br>
          <label id = "price"><?php echo "Price = ".$_SESSION['prices']['2 Large Pizzas'];?></label><br><br>
-             <label id = "price">Qty: </label><input id = "2largeqtytextbox" type = "number" min="0" id = "largePizzaQty" class="qty" name = "largePizzaQty" value ="<?php echo $_POST['largePizzaQty']; ?>"><br> 
+             <label id = "price">Qty: </label><input id = "2largeqtytextbox" type = "number" min="0" id = "largePizzaQty" class="qty" name = "largePizzaQty"><br> 
             <img class = "addicon" src = "images/addicon.PNG" id = "add1" alt = "add icon here" width = "60px" height="50px" onclick="addPromo1()"><br> 
             </p></strong>
             </div>
@@ -89,7 +98,7 @@
             Enjoy a margherita, mushroom and cheese and a pepperoni pizza to share around the table.
             Be sure to come and get one now!!!<br><br>
             <label id = "price"><?php echo "Price = ".$_SESSION['prices']['Family Feed'];?></label><br><br>
-            <label id = "price">Qty: </label><input id = "familyqtytextbox" type = "number" min="0" class="qty" id = "familyQty" name = "familyQty" value ="<?php echo $_POST['familyQty']; ?>"><br> 
+            <label id = "price">Qty: </label><input id = "familyqtytextbox" type = "number" min="0" class="qty" id = "familyQty" name = "familyQty"><br> 
                 <img class = "addicon" src = "images/addicon.PNG" id = "add2" alt = "add icon here" width = "60px" height="50px" onclick="addPromo2()"><br> 
                 </p></strong>
                 </div>
@@ -98,20 +107,18 @@
                 <div class = "column">
             <strong><em><label id = "pizzatitle" ><?php $str = explode('.',$_SESSION['prices']['Kids Pizza']);echo "Kids Pizza for $".$str[0];?></label></em></strong>
             <strong><p id = "pizzaText"><img src = "images/kidspizzapromotion.PNG" alt = "kids pizza image" width = "200" height="200">
-            <br>Looking for something smaller for the kids?
-             A base with napoletana sauce topped with<br> fresh and warm mozzarella cheese.
+            Looking for something smaller for the kids?
+             A base with napoletana sauce topped with fresh and warm mozzarella cheese.
              This one will guarantee to fill the kids up. A meal for just $8
              Be sure to come and get one now!!!<br><br><br>
-             <label id = "price"><?php echo "Price = ".$_SESSION['prices']['Kids Pizza'];?></label><br><br><label id = "price">Qty: </label><input id = "kidsqtytextbox" class="qty" type = "number" min="0" id = "kidsPizzaQty" name = "kidsPizzaQty" value ="<?php echo $_POST['kidsPizzaQty']; ?>"><br> 
+             <label id = "price"><?php echo "Price = ".$_SESSION['prices']['Kids Pizza'];?></label><br><br><label id = "price">Qty: </label><input id = "kidsqtytextbox" class="qty" type = "number" min="0" id = "kidsPizzaQty" name = "kidsPizzaQty"><br> 
                 <img class = "addicon" src = "images/addicon.PNG" id = "add3"alt = "add icon here" width = "60px" height="50px" onclick="addPromo3()"></form><br> 
                 </p></strong>
                 <footer>
                     <ul class = "footerlist">
                         <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                         <li class="navitem"><a href = "review.php">Review Us</a></li>
-                        <li class="navitem"><a href = "FAQ Page.html">FAQ</a></li>
                         <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                        
                     </ul>
                 </footer>
                 </div>
