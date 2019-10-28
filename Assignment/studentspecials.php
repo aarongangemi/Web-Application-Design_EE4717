@@ -77,7 +77,7 @@
            extra flavour,<br> sprikled with basil. Be sure to try<br> this cheesy sensation.
          Be sure to <br>come and get one now!!!<br><br>
          <label id = "price"><?php echo "Price = ".$_SESSION['prices'][4];?></label><br><br>
-         <label id = "price">Qty: </label><input id = "margqtytextbox" class="qty" type = "number" min="0" name = "margheritaQty" id = "margheritaQty" value ="<?php echo $_POST['margheritaQty']; ?>"><br> 
+         <label id = "price">Qty: </label><input id = "margqtytextbox" class="qty" type = "number" min="0" name = "margheritaQty" id = "margheritaQty"><br> 
             <img id = "image" class = "addicon" id = "add1" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addMargheritaToCart()"><br> 
             </p></strong>
             </div>
@@ -90,7 +90,7 @@
             This pizza<br> is covered with fresh thick-cut ham,<br> warm cheese and our famous crunchy<br> pineapple. 
             Enjoy a fresh woodfired<br> base and that delicious crunch.<br> Be sure to come and get one now!!!<br><br>
             <label id = "price"><?php echo "Price = ".$_SESSION['prices'][5];?></label><br><br>
-            <label id = "price">Qty: </label><input id = "hawqtytextbox" type = "number" min="0" name = "hawaiianQty" class="qty" id = "hawaiianQty" value ="<?php echo $_POST['hawaiianQty']; ?>"><br> 
+            <label id = "price">Qty: </label><input id = "hawqtytextbox" type = "number" min="0" name = "hawaiianQty" class="qty" id = "hawaiianQty"><br> 
                 <img class = "addicon" src = "images/addicon.PNG" id = "add2" alt = "add icon here" width = "60px" height="50px" onclick="addHawaiianToCart()"><br> 
                 </p></strong>
                 </div>
@@ -104,7 +104,7 @@
              A mouth-<br>watering pizza, smothered with<br> chicken, ham, capsicum and olives.<br> 
              Be sure to come and get one now!!!<br><br>
              <label id = "price"><?php echo "Price = ".$_SESSION['prices'][6];?></label><br><br>
-             <label id = "price">Qty: </label><input id = "pestoqtytextbox" type = "number" min="0" name = "pestoQty" class="qty" id = "pestoQty" value ="<?php echo $_POST['pestoQty']; ?>"><form><br></strong> 
+             <label id = "price">Qty: </label><input id = "pestoqtytextbox" type = "number" min="0" name = "pestoQty" class="qty" id = "pestoQty"><form><br></strong> 
                 <img id = "image" class = "addicon" id = "add3" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick = "addPestoToCart()"><br> 
                 <footer>
                         <ul class = "footerlist">
