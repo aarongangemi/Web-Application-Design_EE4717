@@ -9,7 +9,7 @@
 <body>
     <header>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.png" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
@@ -17,10 +17,10 @@
             </ul>
             <div>
                  <strong><a id = "signuplabel" href="signUpLogin.php"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
-                 <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
+                 <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.png" width = 150px height = 40px></a>
             </div>
             <div>
-               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
+               <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="10px">
             </div>
     </header>
     <?php
@@ -30,15 +30,15 @@
     }
     if(!isset($_SESSION['prices']))
     {
-        $user = 'root';
-        $passwordLogin = '';
-        $database = "pizzadatabase";
+        $user = 'f35ee';;
+        $passwordLogin = 'f35ee';
+        $database = "f35ee";
         $db = new mysqli('localhost', $user, $passwordLogin, $database);
         if(mysqli_connect_errno())
         {
             echo "Error: Could not connect to database, please try again later";
         }
-        $Query = "SELECT Pizza_price FROM pizzas";
+        $Query = "SELECT Pizza_price FROM Pizzas";
         $result = $db->query($Query);
         if ($result) {
         for($i = 0; $i < $result->num_rows; $i++)

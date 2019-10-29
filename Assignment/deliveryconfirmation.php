@@ -9,7 +9,7 @@
 <body>
     <header>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.png" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
@@ -26,10 +26,10 @@
                      <a href="cartController.php">My Cart</a>
                 </div>
             </div>
-                 <form id = "ordernowlabel" action = "confirmdelivery.php"><input type = "image" src = "images/button_confirm-delivery.PNG" width = 200px height = 40px></form>
+                 <form id = "ordernowlabel" action = "confirmdelivery.php"><input type = "image" src = "images/button_confirm-delivery.png" width = 200px height = 40px></form>
             </div>
             <div>
-               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
+               <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="10px">
             </div>
     </header>
             <p id = "customerdetails"><?php

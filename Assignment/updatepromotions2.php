@@ -2,9 +2,9 @@
 $mixedPizzaPrice = trim($_POST['mixedpizzaprice']);
 $calzonePrice = trim($_POST['calzoneprice']);
 $sushiPrice = trim($_POST['sushiprice']);
-$user = 'root';
-$passwordLogin = '';
-$database = "pizzadatabase";
+$user = 'f35ee';
+$passwordLogin = 'f35ee';
+$database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(!$mixedPizzaPrice || !$calzonePrice || !$sushiPrice)
 {

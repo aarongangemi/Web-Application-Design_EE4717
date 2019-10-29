@@ -19,16 +19,16 @@
     {
         $_SESSION['noOfItems'] = 0;
     }
-    $user = 'root';
-    $passwordLogin = '';
-    $database = "pizzadatabase";
+    $user = 'f35ee';;
+    $passwordLogin = 'f35ee';
+    $database = "f35ee";
     $db = new mysqli('localhost', $user, $passwordLogin, $database);
     if(mysqli_connect_errno())
     {
         echo "Error: Could not connect to database, please try again later";
     }
-    $pepperoniQuery = "SELECT Pizza_price FROM pizzas";
-    $result = $db->query($pepperoniQuery);
+    $query = "SELECT Pizza_price FROM Pizzas";
+    $result = $db->query($query);
     if ($result) {
     for($i = 0; $i < $result->num_rows; $i++)
     {
@@ -41,7 +41,7 @@
     <header>
         <nav>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.png" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
@@ -58,10 +58,10 @@
                      <a href="cartController.php">My Cart</a>
                 </div>
             </div>
-                  <form id = "ordernowlabel" action = "ntuclassicscart.php" method="POST"><input type = "image" id = "cartbutton" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px">
+                  <form id = "ordernowlabel" action = "ntuclassicscart.php" method="POST"><input type = "image" id = "cartbutton" src = "images/button_go-to-cart.png" alt = "cartbutton" width = "150px" height="40px">
             </div>
             <div>
-               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
+               <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
             <div>
                     <nav>
@@ -75,43 +75,43 @@
     <div class="row">
         <div class = "column">
         <strong><em><label id = "pizzatitle" >NTU's Pepperoni Pizza</label></em></strong>
-        <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/Pepperoni-Pizza.PNG" alt = "Pepperoni pizza image" width = "200" height="200">
+        <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/Pepperoni-Pizza.png" alt = "Pepperoni pizza image" width = "200" height="200">
         <br>NTU's famous Pepperoni pizza<br> is one of our most delicious pizza's.
           <br>With a crust that is cooked to<br> perfection.Spread with
            the secret<br> cheese and covered with NTU's<br>
             famous pepperoni. Be sure to <br>come and get one now!!!<br><br>
             <label id = "price" name = "peppprice"><?php echo "Price = ".$_SESSION['prices'][0];?></label><br><br>
             <label id = "price">Qty: </label><input id = "peppqtytextbox" class="qty" name = "pepperoniQty" type = "number" min="0"><br> 
-            <img class = "addicon" id = "add1" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addPepperoniToCart()"><br>
+            <img class = "addicon" id = "add1" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick="addPepperoniToCart()"><br>
             </p></strong>
             </div>
         </div>    
         <div class="row">
                 <div class = "column">
             <strong><em><label id = "pizzatitle" >NTU's Mushroom and Cheese Pizza</label></em></strong>
-            <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/mushroomcheese.PNG" alt = "Mushroom and Cheese pizza image" width = "200" height="200">
+            <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/mushroomcheese.png" alt = "Mushroom and Cheese pizza image" width = "200" height="200">
             <br>NTU's reknowned Mushroom and<br> Cheese pizza is a 
             change up from<br> the traditional margherita pizza. <br>Enjoy a fresh base 
             topped with<br> warm mozzarella cheese. Spread<br> with
                our famous mushroom.Be sure<br> to come and get one now!!!<br><br>
                <label id = "price" name = "mushprice"><?php echo "Price = ".$_SESSION['prices'][1];?></label><br><br>
                <label id = "price">Qty: </label><input id = "mushqtytextbox" class="qty" name = "mushcheeseQty" type = "number" min="0" id = "mushcheeseQty"><br> 
-               <img class = "addicon" id = "add2" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addMushroomToCart()"><br>
+               <img class = "addicon" id = "add2" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick="addMushroomToCart()"><br>
                 </p></strong>
                 </div>
             </div>   
         <div class="row">
                 <div class = "column">
             <strong><em><label id = "pizzatitle" >NTU's Californian Pizza</label></em></strong>
-            <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/californianpizza.PNG" alt = "Californian pizza image" width = "200" height="200">
+            <strong><p id = "pepperoniPizzaText"><img id = "pepperoniPizza" src = "images/californianpizza.png" alt = "Californian pizza image" width = "200" height="200">
             <br>NTU's Californian pizza is a<br> pizza you won't want to miss.
              <br>With a crust surrounded by our<br> mouth-watering napoletana sauce.<br>
              Smothered with our secret<br> cheese, basil, ham and pineapple.<br> 
              Be sure to come and get one now!!!<br><br>
             <label id = "price" name = "calprice"><?php echo "Price = ".$_SESSION['prices'][2];?></label><br><br>
             <label id = "price">Qty: </label><input id = "calqtytextbox" name = "californianQty" class="qty" type = "number" min="0" id = "californianQty"></form><br> 
-            <img class = "addicon" id = "add3" src = "images/addicon.PNG" alt = "add icon here" width = "60px" height="50px" onclick="addCalifornianToCart()"><br>
-                </p></strong>
+            <img class = "addicon" id = "add3" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick="addCalifornianToCart()"><br>
+                </p></strong><br><br>
                 <footer>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>

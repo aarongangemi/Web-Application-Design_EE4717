@@ -2,9 +2,9 @@
 $margheritaPrice = trim($_POST['newmargheritaprice']);
 $hawaiianPrice = trim($_POST['newhawaiianprice']);
 $pestoperiPrice = trim($_POST['newpestoperiprice']);
-$user = 'root';
-$passwordLogin = '';
-$database = "pizzadatabase";
+$user = 'f35ee';
+$passwordLogin = 'f35ee';
+$database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(!$margheritaPrice || !$hawaiianPrice || !$pestoperiPrice)
 {

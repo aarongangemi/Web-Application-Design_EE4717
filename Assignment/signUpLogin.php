@@ -10,7 +10,7 @@
 <body>
     <header>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.png" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
@@ -26,10 +26,10 @@
                      <a href="cartController.php">My Cart</a>
                 </div>
             </div>
-                 <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
+                 <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.png" width = 150px height = 40px></a>
             </div>
             <div>
-               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
+               <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
     </header>
     <div class="row">
@@ -50,7 +50,7 @@
                 <input id = "suburb" type = "text" placeholder="Enter Suburb*" name = "suburbName" id = "suburbName" required/>
                 <input id = "postcode" type = "number" placeholder="Enter Postcode*" name ="postcode" id = "postcode" required/>
                 <input id = "country" type = "text" value="Singapore" readonly> 
-                <input id = "createacntbtn" type = "submit" value="Create Account"></form>
+                <input id = "createacntbtn" type = "submit" value="Create Account"></form><br><br><br>
                 <footer>
                     <ul class = "footerlist">
                         <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>

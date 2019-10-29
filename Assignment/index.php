@@ -10,7 +10,7 @@
 <body>
     <header>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="10px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.png" width = "23px" height="10px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
@@ -26,14 +26,14 @@
                      <a href="cartController.php">My Cart</a>
                 </div>
             </div>
-                 <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.PNG" width = 150px height = 40px></a>
+                 <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.png" width = 150px height = 40px></a>
             </div>
             <div>
-               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="10px">
+               <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="10px">
             </div>
     </header>
     <div id = "scrolltop">
-        <a href = "promotions.php"><img id = "mainBanner" src="images/PizzaBanner1.PNG" alt="PizzaBanner" width="1520px" height="550px"></a>
+        <a href = "promotions.php"><img id = "mainBanner" src="images/PizzaBanner1.png" alt="PizzaBanner" width="1920px" height="550px"></a>
     </div>
     <div id = "scrollbottom">
     <div>

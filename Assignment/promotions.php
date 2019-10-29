@@ -18,23 +18,23 @@
     {
         $_SESSION['noOfItems'] = 0;
     }
-    $user = 'root';
-    $passwordLogin = '';
-    $database = "pizzadatabase";
+    $user = 'f35ee';
+    $passwordLogin = 'f35ee';
+    $database = "f35ee";
     $db = new mysqli('localhost', $user, $passwordLogin, $database);
     if(mysqli_connect_errno())
     {
         echo "Error: Could not connect to database, please try again later";
     }
-    $query = "SELECT Pizza_price FROM pizzas WHERE Pizza_Name = '2 Large Pizzas'";
+    $query = "SELECT Pizza_price FROM Pizzas WHERE Pizza_Name = '2 Large Pizzas'";
     $result = $db->query($query);
     $row = $result->fetch_assoc();
     $_SESSION['prices']['2 Large Pizzas'] = $row['Pizza_price'];
-    $query = "SELECT Pizza_price FROM pizzas WHERE Pizza_Name = 'Family Feed'";
+    $query = "SELECT Pizza_price FROM Pizzas WHERE Pizza_Name = 'Family Feed'";
     $result = $db->query($query);
     $row = $result->fetch_assoc();
     $_SESSION['prices']['Family Feed'] = $row['Pizza_price'];
-    $query = "SELECT Pizza_price FROM pizzas WHERE Pizza_Name = 'Kids Pizza'";
+    $query = "SELECT Pizza_price FROM Pizzas WHERE Pizza_Name = 'Kids Pizza'";
     $result = $db->query($query);
     $row = $result->fetch_assoc();
     $_SESSION['prices']['Kids Pizza'] = $row['Pizza_price'];
@@ -43,7 +43,7 @@
     <header>
         <nav>
             <ul class = "navigationbar">
-                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.PNG" width = "23px" height="20px"></a></strong></li>
+                <li class="navitem"><strong><a href = "index.php"><img src = "images/homeIcon.png" width = "23px" height="20px"></a></strong></li>
                 <li class="navitem"><strong><a href = "ntuclassics.php">Menu</a></strong></li>
                 <li class="navitem"><strong><a href = "promotions.php">Promotions</a></strong></li>
                 <li class="navitem"><strong><a href = "locateus.php">Locate Us</a></strong></li>
@@ -61,10 +61,10 @@
                      <a href="cartController.php">My Cart</a>
                 </div>
             </div>
-                    <form id = "ordernowlabel" action = "promotionscart.php" method="POST"><input type = "image" id = "cartbtn" src = "images/button_go-to-cart.PNG" alt = "cartbutton" width = "150px" height="40px">
+                    <form id = "ordernowlabel" action = "promotionscart.php" method="POST"><input type = "image" id = "cartbtn" src = "images/button_go-to-cart.png" alt = "cartbutton" width = "150px" height="40px">
             </div>
             <div>
-               <br><img class = "companyLogo" src = "images/logo.PNG" alt = "NTU Pizzeria" width = "100px" height="120px">
+               <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
             <div>
                     <nav>
@@ -78,41 +78,41 @@
     <div class="row">
         <div class = "column">
         <strong><em><label id = "pizzatitle" ><?php $str = explode('.',$_SESSION['prices']['2 Large Pizzas']);echo "2 Large Pizza's for $".$str[0];?> </label></em></strong>
-        <strong><p id = "pizzaText"><img src = "images/2pizzapromotion.PNG" alt = "Large Pizza image" width = "250" height="200">
+        <strong><p id = "pizzaText"><img src = "images/2pizzapromotion.png" alt = "Large Pizza image" width = "250" height="200">
         <br>NTU's large pizza's are some of biggest and cheesiest pizza's in Singapore.
           Get two 15 inch pizza's for just $20. The pizza's included are meat-lovers and vegetarian.
            Filled with all the delightful meat and vegies.
          Be sure to come and get one now!!!<br><br>
          <label id = "price"><?php echo "Price = ".$_SESSION['prices']['2 Large Pizzas'];?></label><br><br>
              <label id = "price">Qty: </label><input id = "2largeqtytextbox" type = "number" min="0" id = "largePizzaQty" class="qty" name = "largePizzaQty"><br> 
-            <img class = "addicon" src = "images/addicon.PNG" id = "add1" alt = "add icon here" width = "60px" height="50px" onclick="addPromo1()"><br> 
+            <img class = "addicon" src = "images/addicon.png" id = "add1" alt = "add icon here" width = "60px" height="50px" onclick="addPromo1()"><br> 
             </p></strong>
             </div>
         </div>    
         <div class="row">
                 <div class = "column">
             <strong><em><label id = "pizzatitle" ><?php $str = explode('.',$_SESSION['prices']['Family Feed']);echo "Feed the Family for $".$str[0];?></label></em></strong>
-            <strong><p id = "pizzaText"><img src = "images/familypromotion.PNG" alt = "Family promotion image" width = "250" height="200">
+            <strong><p id = "pizzaText"><img src = "images/familypromotion.png" alt = "Family promotion image" width = "250" height="200">
             <br>Looking to feed the family?<br>
             This pizza deal is one not to miss. Get in now and get 3 pizzas for the price of just $15.
             Enjoy a margherita, mushroom and cheese and a pepperoni pizza to share around the table.
             Be sure to come and get one now!!!<br><br>
             <label id = "price"><?php echo "Price = ".$_SESSION['prices']['Family Feed'];?></label><br><br>
             <label id = "price">Qty: </label><input id = "familyqtytextbox" type = "number" min="0" class="qty" id = "familyQty" name = "familyQty"><br> 
-                <img class = "addicon" src = "images/addicon.PNG" id = "add2" alt = "add icon here" width = "60px" height="50px" onclick="addPromo2()"><br> 
+                <img class = "addicon" src = "images/addicon.png" id = "add2" alt = "add icon here" width = "60px" height="50px" onclick="addPromo2()"><br> 
                 </p></strong>
                 </div>
             </div>   
         <div class="row">
                 <div class = "column">
             <strong><em><label id = "pizzatitle" ><?php $str = explode('.',$_SESSION['prices']['Kids Pizza']);echo "Kids Pizza for $".$str[0];?></label></em></strong>
-            <strong><p id = "pizzaText"><img src = "images/kidspizzapromotion.PNG" alt = "kids pizza image" width = "200" height="200">
+            <strong><p id = "pizzaText"><img src = "images/kidspizzapromotion.png" alt = "kids pizza image" width = "200" height="200">
             Looking for something smaller for the kids?
              A base with napoletana sauce topped with fresh and warm mozzarella cheese.
              This one will guarantee to fill the kids up. A meal for just $8
              Be sure to come and get one now!!!<br><br><br>
              <label id = "price"><?php echo "Price = ".$_SESSION['prices']['Kids Pizza'];?></label><br><br><label id = "price">Qty: </label><input id = "kidsqtytextbox" class="qty" type = "number" min="0" id = "kidsPizzaQty" name = "kidsPizzaQty"><br> 
-                <img class = "addicon" src = "images/addicon.PNG" id = "add3"alt = "add icon here" width = "60px" height="50px" onclick="addPromo3()"></form><br> 
+                <img class = "addicon" src = "images/addicon.png" id = "add3"alt = "add icon here" width = "60px" height="50px" onclick="addPromo3()"></form><br> 
                 </p></strong>
                 <footer>
                     <ul class = "footerlist">

@@ -2,9 +2,9 @@
 $largePizzaPrice = trim($_POST['2largepizzasprice']);
 $familyFeedPrice = trim($_POST['familyfeedprice']);
 $kidsPizzaPrice = trim($_POST['kidspizzaprice']);
-$user = 'root';
-$passwordLogin = '';
-$database = "pizzadatabase";
+$user = 'f35ee';
+$passwordLogin = 'f35ee';
+$database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(!$largePizzaPrice || !$familyFeedPrice || !$kidsPizzaPrice)
 {

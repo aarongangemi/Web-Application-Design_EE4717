@@ -3,11 +3,11 @@ html{
 }
 
 #scrolltop{
-    height: 600px;
+    height: 700px;
 }
 
 #scrollbottom{
-    min-width: 600px;
+    min-width: 700px;
     width: 100%;
     height: auto;
 

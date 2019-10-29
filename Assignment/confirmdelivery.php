@@ -15,15 +15,15 @@ function mailUser()
 }
 function addOrderToDatabase()
 {
-$user = 'root';
-$passwordLogin = '';
-$database = "orderdatabase";
+$user = 'f35ee';;
+$passwordLogin = 'f35ee';
+$database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(mysqli_connect_errno())
 {
     echo "Error: Could not connect to database, please try again later";
 }
-$query = 'INSERT INTO orders(Customer_ID,Total_Paid,Delivery_Address) VALUES ("'.$_SESSION['loggedinUser']['customerID'].'","'.$_SESSION['loggedinUser']['total'].'","'.$_SESSION['loggedinUser']['deliveryAddress'].'")';
+$query = 'INSERT INTO Orders(Customer_ID,Total_Paid,Delivery_Address) VALUES ("'.$_SESSION['loggedinUser']['customerID'].'","'.$_SESSION['loggedinUser']['total'].'","'.$_SESSION['loggedinUser']['deliveryAddress'].'")';
 $result = $db->query($query);
 }
 addOrderToDatabase();

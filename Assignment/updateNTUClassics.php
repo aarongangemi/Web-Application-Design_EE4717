@@ -2,9 +2,9 @@
 $pepperoniPrice = trim($_POST['newpepperoniprice']);
 $mushcheesePrice = trim($_POST['newmushcheeseprice']);
 $californianPrice = trim($_POST['newcalifornianprice']);
-$user = 'root';
-$passwordLogin = '';
-$database = "pizzadatabase";
+$user = 'f35ee';
+$passwordLogin = 'f35ee';
+$database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(!$pepperoniPrice || !$mushcheesePrice || !$californianPrice)
 {

@@ -12,15 +12,15 @@ if(!get_magic_quotes_gpc())
     $emailAddress = addslashes($emailAddress);
     $password = addslashes($password);
 }
-$user = 'root';
-$passwordLogin = '';
-$database = "NTUPizzeria";
+$user = 'f35ee';
+$passwordLogin = 'f35ee';
+$database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);
 if(mysqli_connect_errno())
 {
     echo "Error: Could not connect to database, please try again later";
 }
-$query = "SELECT Customer_ID, Full_Name, Email, DOB, Address FROM ntupizzeria WHERE Email = '$emailAddress' AND Password = '$password'";
+$query = "SELECT Customer_ID, Full_Name, Email, DOB, Address FROM Customers WHERE Email = '$emailAddress' AND Password = '$password'";
 $result = $db->query($query);
 if($result->num_rows > 0)
 {
