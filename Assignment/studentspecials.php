@@ -106,14 +106,6 @@
              <label id = "price"><?php echo "Price = ".$_SESSION['prices'][5];?></label><br><br>
              <label id = "price">Qty: </label></strong><input id = "pestoqtytextbox" type = "number" min="0" name = "pestoQty" class="qty" id = "pestoQty"></form><br> 
                 <img id = "image" class = "addicon" id = "add3" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick = "addPestoToCart()">
-                <footer><br><br>
-                        <ul class = "footerlist">
-                            <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
-                            <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                            
-                        </ul>
-                    </footer>
                 </p>
                 </div>
             </div> 

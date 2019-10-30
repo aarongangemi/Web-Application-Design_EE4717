@@ -111,13 +111,6 @@
             <label id = "price">Qty: </label><input type = "number" min="0" name = "sushiQty" class="qty" id = "sushiQty"><br> 
                 <img class = "addicon" src = "images/addicon.png" id = "add3" alt = "add icon here" width = "60px" height="50px" onclick="addPromo6()"></form><br> 
                 </p></strong><br><br>
-                <footer>
-                        <ul class = "footerlist">
-                            <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
-                            <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li> 
-                        </ul>
-                    </footer>
                 </p>
                 </div>
             </div> 

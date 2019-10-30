@@ -50,14 +50,7 @@
                 <input id = "suburb" type = "text" placeholder="Enter Suburb*" name = "suburbName" id = "suburbName" required/>
                 <input id = "postcode" type = "number" placeholder="Enter Postcode*" name ="postcode" id = "postcode" required/>
                 <input id = "country" type = "text" value="Singapore" readonly> 
-                <input id = "createacntbtn" type = "submit" value="Create Account"></form><br><br><br>
-                <footer>
-                    <ul class = "footerlist">
-                        <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
-                        <li class="navitem"><a href = "review.php">Review Us</a></li>
-                        <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                    </ul>
-                </footer>
+                <input id = "createacntbtn" type = "submit" value="Create Account"></form>
         </div>
         <div class="column">
                 <h1>Login to Account</h1>

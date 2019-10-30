@@ -41,14 +41,5 @@
         <a href = "promotions.php"> <img id = "kidsbanner" src = "images/kidsbanner.PNG" alt = "kidsbanner" width = "500" height = "350px"></a>
         </div>
     </div>
-    <div>
-    <footer>
-        <ul class = "footerlist">
-            <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
-            <li class="navitem"><a href = "review.php">Review Us</a></li>
-            <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-        </ul>
-    </footer>
-    </div>
 </body> 
 </html>

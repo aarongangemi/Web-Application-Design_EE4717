@@ -58,15 +58,7 @@
             <p id = "addressdetails">62 Nanyang Crescent, Singapore<br>(Inside NTU Campus, across from Binjai Hall)</p>
             <strong><label id = "addresstitle">Contact Us:</label></strong>
             <p id = "contactdetails">Phone Number: 61459491711<br>
-               NTU@ThePizzeria.com.au</p><br><br><br>
+               NTU@ThePizzeria.com.au</p>
         </div>
-               <footer>
-                    <ul class = "footerlistX">
-                            <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
-                            <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                            
-                        </ul>
-               </footer>
 </body> 
 </html>

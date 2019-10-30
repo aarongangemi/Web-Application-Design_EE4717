@@ -114,14 +114,6 @@
                 <img class = "addicon" src = "images/addicon.png" id = "add3"alt = "add icon here" width = "60px" height="50px" onclick="addPromo3()"></form><br> 
                 </p></strong>
                 </p></strong><br>
-                <footer>
-                        <ul class = "footerlist">
-                            <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
-                            <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-           
-                        </ul>
-                    </footer>
                 </div>
             </div>   
             <div class = "row">
