@@ -31,6 +31,9 @@ td, th{
     }
 #cartbutton{
     float: right;
+    font-size: 20px;
+    min-width: 10%;
+    width:15%;
 }    
 
 #deliverylabel{

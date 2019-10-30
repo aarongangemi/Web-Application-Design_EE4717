@@ -9,8 +9,14 @@
     float: left;
     border-right: 2px solid #bbb;
     list-style-type: none;
+    min-width: 10%;
 }
 
+.container{
+    width: 100px;
+    height: 78px;
+    display: block;
+}
 
 ul.menunavigationbar{
     top: 100px;
@@ -19,6 +25,7 @@ ul.menunavigationbar{
     position: absolute;
     min-width: 20%;
     width: 40%;
+    
 }
 
 #menuitemnoborder{
@@ -58,8 +65,9 @@ ul.menunavigationbar li a:hover{
 
 .column{
     float: left;
-    padding:20px;
+    padding:25px;
     box-sizing: border-box;
+    margin-left: 50px;
 }
 
 .row::after{
@@ -78,6 +86,7 @@ ul.menunavigationbar li a:hover{
 
 #cartbtn{
     margin-right: 100px;
+    
 }
 
 .qty{

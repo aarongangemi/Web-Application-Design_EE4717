@@ -61,10 +61,9 @@
                NTU@ThePizzeria.com.au</p><br><br><br>
         </div>
                <footer>
-                    <ul class = "footerlist">
+                    <ul class = "footerlistX">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
                             
                         </ul>

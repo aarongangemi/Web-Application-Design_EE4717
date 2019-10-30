@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>NTU Pizzeria - Student Specials</title>
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="menucss.css">
 <link rel="stylesheet" href="studentspecialsCSS.css">
 <script type = "text/javascript" src = "menucart.js"></script>
@@ -62,7 +61,7 @@
             <div>
                <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
-            <div>
+            <div class = "container">
                     <nav>
                     <ul class = "menunavigationbar">
                         <li class="menunavitem"><strong><a id = "ntuclassicstitle" href = "promotions.php">Our Deals</a></strong></li>
@@ -70,6 +69,7 @@
                     </ul>
                     </nav>
                 </div>
+    </div>
     </header>
     <div class="row">
         <div class = "column">
@@ -110,7 +110,7 @@
              <label id = "price"><?php echo "Price = ".$_SESSION['prices']['sushiPromo'];?></label><br><br>
             <label id = "price">Qty: </label><input type = "number" min="0" name = "sushiQty" class="qty" id = "sushiQty"><br> 
                 <img class = "addicon" src = "images/addicon.png" id = "add3" alt = "add icon here" width = "60px" height="50px" onclick="addPromo6()"></form><br> 
-                </p></strong>
+                </p></strong><br><br>
                 <footer>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>

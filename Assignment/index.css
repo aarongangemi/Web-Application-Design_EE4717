@@ -104,14 +104,13 @@ li:last-child{
 .dropdown{
     position: relative;
     display: inline-block;
-    min-width: 160px;
+    min-width: 10%;
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
     background-color: black;
-    min-width: 160px;
 }
 
 .dropdown-content a{

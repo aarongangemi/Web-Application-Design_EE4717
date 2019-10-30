@@ -47,17 +47,13 @@
         <textarea name = "improvedtextbox" id = "improvedtextbox" rows = 6 cols = "50" placeholder="What could be improved" required></textarea><br><br> 
         <input id = "submitbutton" type = "image" src="images/button_submit-review.png" width="150"></form><br><br><br>
     </div>
-    <div>
-        <footer><br><br><br>
-            <ul class = "footerlist">
+        <footer>
+            <ul class = "footerlistX">
                     <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                     <li class="navitem"><a href = "review.php">Review Us</a></li>
-                    
                     <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                    
             </ul>
        </footer>
-    </div>
 </body>
  
 </html>

@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>NTU Pizzeria - NTU Classics</title>
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="menucss.css">
 <script type="text/javascript" src="cartJS.js"></script>
 <script type="text/javascript" src="menucart.js"></script>
@@ -63,7 +62,7 @@
             <div>
                <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
-            <div>
+            <div class = "container">
                     <nav>
                     <ul class = "menunavigationbar">
                         <li class="menunavitem"><strong><a id = "menunavitem" href = "ntuclassics.php">NTU Classics</a></strong></li>
@@ -116,7 +115,6 @@
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
            
                         </ul>

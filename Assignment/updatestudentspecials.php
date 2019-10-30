@@ -22,11 +22,11 @@ if(!get_magic_quotes_gpc())
     $hawaiianPrice = addslashes($hawaiianPrice);
     $pestoperiPrice = addslashes($pestoperiPrice);
 }
-$query = "UPDATE pizzas SET Pizza_price = '$margheritaPrice' WHERE Pizza_Name = 'Margherita Pizza'";
+$query = "UPDATE Pizzas SET Pizza_price = '$margheritaPrice' WHERE Pizza_Name = 'Margherita Pizza'";
 $result = $db->query($query);
-$query = "UPDATE pizzas SET Pizza_price = '$hawaiianPrice' WHERE Pizza_Name = 'Hawaiian Pizza'";
+$query = "UPDATE Pizzas SET Pizza_price = '$hawaiianPrice' WHERE Pizza_Name = 'Hawaiian Pizza'";
 $result = $db->query($query);
-$query = "UPDATE pizzas SET Pizza_price = '$pestoperiPrice' WHERE Pizza_Name = 'Pesto Peri Pizza'";
+$query = "UPDATE Pizzas SET Pizza_price = '$pestoperiPrice' WHERE Pizza_Name = 'Pesto Peri Pizza'";
 $result = $db->query($query);
 include "ntuclassics.php";
 //TODO: Up to here, need to set value of input text box so value is not null - will require database to store pizza price.

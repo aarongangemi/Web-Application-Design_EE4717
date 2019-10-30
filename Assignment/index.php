@@ -46,9 +46,7 @@
         <ul class = "footerlist">
             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
             <li class="navitem"><a href = "review.php">Review Us</a></li>
-            <li class="navitem"><a href = "admin.php">Admin</a></li>
             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-            
         </ul>
     </footer>
     </div>

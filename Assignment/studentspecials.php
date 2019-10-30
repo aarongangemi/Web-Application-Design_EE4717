@@ -59,7 +59,7 @@
             <div>
                <br><img class = "companyLogo" src = "images/logo.png" alt = "NTU Pizzeria" width = "100px" height="120px">
             </div>
-            <div>
+            <div class = "container">
                     <nav>
                     <ul class = "menunavigationbar">
                         <li class="menunavitem"><strong><a id = "ntuclassicstitle" href = "ntuclassics.php">NTU Classics</a></strong></li>
@@ -76,7 +76,7 @@
           A cheesy<br> delight filled and topped with<br> tomatoes and to add
            extra flavour,<br> sprikled with basil. Be sure to try<br> this cheesy sensation.
          Be sure to <br>come and get one now!!!<br><br>
-         <label id = "price"><?php echo "Price = ".$_SESSION['prices'][4];?></label><br><br>
+         <label id = "price"><?php echo "Price = ".$_SESSION['prices'][3];?></label><br><br>
          <label id = "price">Qty: </label><input id = "margqtytextbox" class="qty" type = "number" min="0" name = "margheritaQty" id = "margheritaQty"><br> 
             <img id = "image" class = "addicon" id = "add1" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick="addMargheritaToCart()"><br> 
             </p></strong>
@@ -89,7 +89,7 @@
             <br>Ham and Cheese not enough?<br> Why not add Pineapple? 
             This pizza<br> is covered with fresh thick-cut ham,<br> warm cheese and our famous crunchy<br> pineapple. 
             Enjoy a fresh woodfired<br> base and that delicious crunch.<br> Be sure to come and get one now!!!<br><br>
-            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][5];?></label><br><br>
+            <label id = "price"><?php echo "Price = ".$_SESSION['prices'][4];?></label><br><br>
             <label id = "price">Qty: </label><input id = "hawqtytextbox" type = "number" min="0" name = "hawaiianQty" class="qty" id = "hawaiianQty"><br> 
                 <img class = "addicon" src = "images/addicon.png" id = "add2" alt = "add icon here" width = "60px" height="50px" onclick="addHawaiianToCart()"><br> 
                 </p></strong>
@@ -103,14 +103,13 @@
              A base with<br> napoletana sauce replaced with<br> our divine pesto sauce.
              A mouth-<br>watering pizza, smothered with<br> chicken, ham, capsicum and olives.<br> 
              Be sure to come and get one now!!!<br><br>
-             <label id = "price"><?php echo "Price = ".$_SESSION['prices'][6];?></label><br><br>
-             <label id = "price">Qty: </label><input id = "pestoqtytextbox" type = "number" min="0" name = "pestoQty" class="qty" id = "pestoQty"><form><br></strong> 
-                <img id = "image" class = "addicon" id = "add3" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick = "addPestoToCart()"><br><br><br> 
-                <footer>
+             <label id = "price"><?php echo "Price = ".$_SESSION['prices'][5];?></label><br><br>
+             <label id = "price">Qty: </label></strong><input id = "pestoqtytextbox" type = "number" min="0" name = "pestoQty" class="qty" id = "pestoQty"></form><br> 
+                <img id = "image" class = "addicon" id = "add3" src = "images/addicon.png" alt = "add icon here" width = "60px" height="50px" onclick = "addPestoToCart()">
+                <footer><br><br>
                         <ul class = "footerlist">
                             <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                             <li class="navitem"><a href = "review.php">Review Us</a></li>
-                            
                             <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
                             
                         </ul>
