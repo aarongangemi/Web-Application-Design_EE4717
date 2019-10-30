@@ -24,6 +24,7 @@
                      <a href="logout.php"><?php if(!isset($_SESSION['loggedinUser'])){echo "Log In";}else{ echo "Log Out";}?></a>
                      <a href="ntuclassics.php">Order Now</a>
                      <a href="cartController.php">My Cart</a>
+                     <a href="admin.php">Admin</a>
                 </div>
             </div>
                  <a id = "ordernowlabel" href="ntuclassics.php"><img src = "images/ordernow.png" width = 150px height = 40px></a>
