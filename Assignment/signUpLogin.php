@@ -40,7 +40,7 @@
                 <input type="text" placeholder="Enter Full Name (E.g. John Doe)" name = "fullname" id = "fullname" required><br><br>
                 <label><b>Email*</b></label><br>
                 <input type = "email" placeholder="Enter Email Address" name = "emailfield" id = "email" required><br><br>
-                <label><b>Password*</b></label><br>
+                <label><b>Password* (Must have at least 1 capital letter and contains at least 8 digits)</b></label><br>
                 <input type = "password" placeholder="Enter Password" name = "password" id = "password" required><br><br>
                 <label><b>Date of Birth*</b></label><br>
                 <input type="date" placeholder="Enter D.O.B" name="dateofBirth" id = "dateofbirth" required><br><br>
@@ -56,7 +56,6 @@
                         <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
                         <li class="navitem"><a href = "review.php">Review Us</a></li>
                         <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
-                        
                     </ul>
                 </footer>
         </div>

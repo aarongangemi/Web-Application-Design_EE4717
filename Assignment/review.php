@@ -45,8 +45,9 @@
         <strong><label><input type = "radio" name = "radioStar" id = "5Star"/>5 Stars</label></strong><br><br>
         <textarea name = "enjoyedtextbox" id = "enjoyedtextbox" rows = "6" cols="50" placeholder="What did you enjoy?" required></textarea><br><br>
         <textarea name = "improvedtextbox" id = "improvedtextbox" rows = 6 cols = "50" placeholder="What could be improved" required></textarea><br><br> 
-        <input id = "submitbutton" type = "image" src="images/button_submit-review.png" width="150"></form><br><br><br>
+        <input id = "submitbutton" type = "image" src="images/button_submit-review.png" width="150"></form>
     </div>
+    <div class="container">
         <footer>
             <ul class = "footerlistX">
                     <li class="navitem"><a href = "locateus.php">Contact us/Locate Us</a></li>
@@ -54,6 +55,7 @@
                     <li class="navitem"><a href = "disclaimers.html">Disclaimers</a></li>
             </ul>
        </footer>
+       </div>
 </body>
  
 </html>

@@ -8,15 +8,18 @@ label{
 
 #submitbutton{
     margin-left: 300px;
+    min-width: 10%;
 }
 
 ul.footerlistX{
+    display: inline-block;
     list-style: none;
     left: 30%;
     bottom: 3%;
     position: absolute;
     min-width: 20%;
-    width: 40%;
+    width: 80%;
+    height: auto;
  }
 
  
@@ -25,3 +28,9 @@ ul.footerlistX{
     min-width: 100px;  
     width: 40%;
  }
+
+ .container{
+    width: 100px;
+    height: 78px;
+    display: block;
+}
