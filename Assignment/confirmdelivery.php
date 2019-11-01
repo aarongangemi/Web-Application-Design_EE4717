@@ -15,7 +15,7 @@ function mailUser()
 }
 function addOrderToDatabase()
 {
-$user = 'f35ee';;
+$user = 'f35ee';
 $passwordLogin = 'f35ee';
 $database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);

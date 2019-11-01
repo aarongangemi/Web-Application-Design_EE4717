@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>NTU Pizzeria - Review Page</title>
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="reviewCSS.css">
 <script type="text/javascript" src = "validateReview.js"></script>
 </head>
@@ -16,7 +15,7 @@
     </header>
     <div id = "centreform">
     <form method="GET" action = "confirmreview.php" onsubmit="return validateReviewForm()">
-        <strong><label>Full Name:* </label></strong><input type="text" name = "FullName" id = "fullname" required><br><br>
+        <strong><label>Name:* </label></strong><input type="text" name = "FullName" id = "fullname" required><br><br>
         <strong><label>Email Address:* </label></strong><input type="email" name = "email address" id = "emailaddress" required><br><br>
         <strong><label><input type = "radio" name = "radioStar" id = "1Star"/>1 Stars</label></strong>
         <strong><label><input type = "radio" name = "radioStar" id = "2Star"/>2 Stars</label></strong>

@@ -21,7 +21,7 @@ if(!get_magic_quotes_gpc())
     $DOB = addslashes($DOB);
     $deliveryAddress = addslashes($deliveryAddress);
 }
-$user = 'f35ee';;
+$user = 'f35ee';
 $passwordLogin = 'f35ee';
 $database = "f35ee";
 $db = new mysqli('localhost', $user, $passwordLogin, $database);

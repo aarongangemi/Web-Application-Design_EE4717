@@ -108,4 +108,4 @@ $query = "INSERT INTO Pizzas(
     {
         echo " Unsuccessful";
     }
-    ?>
+?>

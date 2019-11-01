@@ -5,7 +5,6 @@
 <title>NTU Pizzeria - NTU Classics</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="menucss.css">
-<script type="text/javascript" src="cartJS.js"></script>
 <script type="text/javascript" src="menucart.js"></script>
 </head>
 <body>
@@ -18,7 +17,7 @@
     {
         $_SESSION['noOfItems'] = 0;
     }
-    $user = 'f35ee';;
+    $user = 'f35ee';
     $passwordLogin = 'f35ee';
     $database = "f35ee";
     $db = new mysqli('localhost', $user, $passwordLogin, $database);
