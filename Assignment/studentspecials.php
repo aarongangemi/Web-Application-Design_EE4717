@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>NTU Pizzeria - Student Specials</title>
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="menucss.css">
 <link rel="stylesheet" href="studentspecialsCSS.css">
 <script type="text/javascript" src="menucart.js"></script>

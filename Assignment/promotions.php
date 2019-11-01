@@ -5,6 +5,7 @@
 <title>NTU Pizzeria - NTU Classics</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="menucss.css">
+<script type="text/javascript" src="cartJS.js"></script>
 <script type="text/javascript" src="menucart.js"></script>
 </head>
 <body>
