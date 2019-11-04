@@ -22,5 +22,8 @@
         <a href = "promotions.php"> <img id = "kidsbanner" src = "images/kidsbanner.PNG" alt = "kidsbanner" width = "500" height = "350px"></a>
         </div>
     </div>
+    <?php
+        include 'footer.html';
+    ?>
 </body> 
 </html>

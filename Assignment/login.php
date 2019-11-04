@@ -38,6 +38,7 @@ if($result->num_rows > 0)
 }
 else
 {
+    $_SESSION['alertUser'] = true;
     header("Location: signUpLogin.php");
 }
 $db->close();

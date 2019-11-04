@@ -44,6 +44,17 @@
     <?php
         include 'promotionsheader.php';
         ?>
+        <div class = "row">
+            <div class = "column">
+                <b><p id = "tablelabel">Items Added:</p></b><br>
+                <table id = "cartTable">
+                        <tr>
+                            <th>Cart Item</th>
+                            <th>Quantity</th>
+                        </tr>
+                </table>
+            </div>
+        </div>
     </header>
     <div class="row">
         <div class = "column">
@@ -53,7 +64,7 @@
           Get two 15 inch<br> pizza's for just $20. The pizza's<br> included are meat-lovers and<br> vegetarian.
            Filled with all the<br> delightful meat and vegies.<br>
          Be sure to come and get one now!!!<br><br>
-         <label id = "price"><?php echo "Price = ".$_SESSION['prices']['2 Large Pizzas'];?></label><br><br>
+         <label id = "price"><?php echo "Price = ".$_SESSION['prices']['2 Large Pizzas'];?></label><br><br><form>
              <label id = "price">Qty: </label><input id = "2largeqtytextbox" type = "number" min="0" id = "largePizzaQty" class="qty" name = "largePizzaQty"><br> 
             <img class = "addicon" src = "images/addicon.png" id = "add1" alt = "add icon here" width = "60px" height="50px" onclick="addPromo1()"><br>
             </p></strong>
@@ -87,17 +98,6 @@
                 </p></strong><br>
                 </div>
             </div>   
-            <div class = "row">
-            <div class = "column">
-                <b><p id = "tablelabel">Items Added:</p></b><br>
-                <table id = "cartTable">
-                        <tr>
-                            <th>Cart Item</th>
-                            <th>Quantity</th>
-                        </tr>
-                </table>
-            </div>
-        </div>
         <?php
             if(!isset($_SESSION['alertUser']))
             {
@@ -110,6 +110,7 @@
                 </script>";
                 $_SESSION['alertUser'] = false;
             }
+            include 'footer.html';
         ?>
 </body>
 </html>

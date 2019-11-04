@@ -18,13 +18,12 @@
             <div>
             <div>
                 <div class = "dropdown">
-                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.php"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up/Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
+                 <strong><a id = "signuplabel" class = "droptxt" href="signUpLogin.php"><?php if(!isset($_SESSION)){session_start();}if(!isset($_SESSION['loggedinUser']['fullname'])){echo "Sign Up<br/>Login";}else{echo "Welcome: ".$_SESSION['loggedinUser']['fullname'];}?></a></strong>
                  <div class = "dropdown-content">
                      <a href="signUpLogin.php">Sign Up</a>
                      <a href="logout.php"><?php if(!isset($_SESSION['loggedinUser'])){echo "Log In";}else{ echo "Log Out";}?></a>
                      <a href="ntuclassics.php">Order Now</a>
                      <a href="cartController.php">My Cart</a>
-                     <a href="admin.php">Admin</a>
                 </div>
             </div>
                  <form id = "ordernowlabel" action = "confirmdelivery.php"><input type = "image" src = "images/button_confirm-delivery.png" width = 200px height = 40px></form>
@@ -64,5 +63,8 @@
                 }
             }
             ?></p>
+        <?php
+        include 'footer.html';
+        ?>
     </body>
     </html>

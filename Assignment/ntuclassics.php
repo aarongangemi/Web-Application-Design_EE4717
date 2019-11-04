@@ -41,6 +41,17 @@
         <?php
         include 'menuheader.php';
         ?>
+        <div class = "row">
+            <div class = "column">
+                <b><p id = "tablelabel">Items Added:</p></b><br>
+                <table id = "cartTable">
+                        <tr>
+                            <th>Cart Item</th>
+                            <th>Quantity</th>
+                        </tr>
+                </table>
+            </div>
+        </div>
     </header>
     <div class="row">
         <div class = "column">
@@ -84,17 +95,6 @@
                 </p></strong><br><br>
                 </div>
             </div>   
-            <div class = "row">
-            <div class = "column">
-                <b><p id = "tablelabel">Items Added:</p></b><br>
-                <table id = "cartTable">
-                        <tr>
-                            <th>Cart Item</th>
-                            <th>Quantity</th>
-                        </tr>
-                </table>
-            </div>
-        </div>
         <?php
             if(!isset($_SESSION['alertUser']))
             {
@@ -107,6 +107,7 @@
                 </script>";
                 $_SESSION['alertUser'] = false;
             }
+            include 'footer.html';
         ?>
 </body>
 </html>

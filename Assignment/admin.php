@@ -116,5 +116,8 @@
             <td><input type = "submit"></td>
         </tr>
         </form>
+        <?php
+        include 'footer.html';
+        ?>
 </body> 
 </html>

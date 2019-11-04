@@ -40,5 +40,8 @@
             <p id = "contactdetails">Phone Number: 61459491711<br>
                NTU@ThePizzeria.com.au</p>
         </div>
+        <?php
+        include 'footer.html';
+        ?>
 </body> 
 </html>

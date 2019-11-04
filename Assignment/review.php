@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>NTU Pizzeria - Review Page</title>
 <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="home.css">
 <link rel="stylesheet" href="reviewCSS.css">
 <script type="text/javascript" src = "validateReview.js"></script>
 </head>
@@ -27,6 +26,8 @@
         <textarea name = "improvedtextbox" id = "improvedtextbox" rows = 6 cols = "50" placeholder="What could be improved" required></textarea><br><br> 
         <input id = "submitbutton" type = "image" src="images/button_submit-review.png" width="150"></form>
     </div>
+    <?php
+    include 'footer.html';
+    ?>
 </body>
- 
 </html>

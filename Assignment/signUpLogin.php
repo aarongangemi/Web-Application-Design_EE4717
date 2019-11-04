@@ -46,6 +46,23 @@
                 </form>
         </div>
     </div> 
-    
+    <?php
+    if(!isset($_SESSION))
+    {
+        session_start();
+    }
+    if(!isset($_SESSION['alertUser']))
+    {
+        $_SESSION['alertUser'] = false;
+    }
+    if($_SESSION['alertUser'] == true)
+    {
+        echo "<script type='text/javascript'>
+        alert('Invalid Login, Please try again');
+        </script>";
+        $_SESSION['alertUser'] = false;
+    }
+    include 'footer.html';
+    ?>
 </body> 
 </html>

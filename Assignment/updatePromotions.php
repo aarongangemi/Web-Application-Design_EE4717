@@ -29,6 +29,4 @@ $result = $db->query($query);
 $query = "UPDATE Pizzas SET Pizza_price = '$kidsPizzaPrice' WHERE Pizza_Name = 'Kids Pizza'";
 $result = $db->query($query);
 include "ntuclassics.php";
-//TODO: Up to here, need to set value of input text box so value is not null - will require database to store pizza price.
-//TODO: Then need to implement Update function 
 ?>
