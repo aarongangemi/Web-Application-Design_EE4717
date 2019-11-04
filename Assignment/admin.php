@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - Home Page</title>
+<title>NTU Pizzeria - Admin Page</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="admin.css">
 </head>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - NTU Classics</title>
+<title>NTU Pizzeria - Promotions</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="menucss.css">
 <script type="text/javascript" src="cartJS.js"></script>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - Student Specials</title>
+<title>NTU Pizzeria - Promotions</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="menucss.css">
 <link rel="stylesheet" href="studentspecialsCSS.css">

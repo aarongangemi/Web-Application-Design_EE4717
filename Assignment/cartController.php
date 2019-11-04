@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NTU Pizzeria - Home Page</title>
+<title>NTU Pizzeria - Cart</title>
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="cartcss.css">
 </head>
